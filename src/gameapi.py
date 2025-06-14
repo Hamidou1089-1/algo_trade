@@ -5,6 +5,10 @@ import pandas as pd
 from dataclasses import dataclass, asdict, field
 from typing import Optional, List, Dict, Tuple, Any
 from datetime import datetime
+import logging
+
+# Import market data cache (will be passed from BotManager)
+from market_data_cache import MarketDataCache, InstrumentInfo
 
 # Type definitions
 InstrumentID_t = str
@@ -14,7 +18,9 @@ Quantity_t = int
 OrderID_t = str
 TeamID_t = str
 
-# Message dataclasses
+logger = logging.getLogger(__name__)
+
+# Message dataclasses (keeping all the existing ones)
 @dataclass
 class BaseMessage:
     type: str
@@ -102,43 +108,25 @@ class GetPendingOrdersResponse:
     user_request_id: str
     data: Dict[InstrumentID_t, Tuple[List[OrderJSON], List[OrderJSON]]]
 
-@dataclass
-class OrderbookDepth:
-    bids: Dict[Price_t, Quantity_t]
-    asks: Dict[Price_t, Quantity_t]
-
-@dataclass
-class CandleDataResponse:
-    tradeable: Dict[InstrumentID_t, List[Dict[str, Any]]]
-    untradeable: Dict[InstrumentID_t, List[Dict[str, Any]]]
-
-@dataclass
-class MarketDataResponse(BaseMessage):
-    type: str
-    time: Time_t
-    candles: CandleDataResponse
-    orderbook_depths: Dict[InstrumentID_t, OrderbookDepth]
-    events: List[Dict[str, Any]]
-    user_request_id: Optional[str] = None
-
 
 class GameAPI:
-    def __init__(self, uri: str, team_secret: str):
+    def __init__(self, uri: str, team_secret: str, market_cache: Optional[MarketDataCache] = None):
         self.uri = f"{uri}?team_secret={team_secret}"
         self.ws = None
         self._pending: Dict[str, asyncio.Future] = {}
         self._user_request_id = 0
-        self._market_data_cache = {}
-        self._orderbook_cache = {}
+
+        # Use the shared market cache instead of maintaining our own
+        self.market_cache = market_cache
 
     async def connect(self):
-        """Connect to the AlgoTrade server"""
+        """Connect to the AlgoTrade server for trading"""
         self.ws = await websockets.connect(self.uri)
         welcome_data = json.loads(await self.ws.recv())
         welcome_message = WelcomeMessage(**welcome_data)
-        print(f"Connected: {welcome_message.message}")
+        logger.info(f"GameAPI Connected: {welcome_message.message}")
 
-        # Start receiving messages
+        # Start receiving messages (only for trading responses)
         asyncio.create_task(self._receive_loop())
         return welcome_message
 
@@ -146,44 +134,28 @@ class GameAPI:
         """Disconnect from the server"""
         if self.ws:
             await self.ws.close()
+            logger.info("GameAPI disconnected")
 
     async def _receive_loop(self):
-        """Internal loop to receive and process messages"""
+        """Internal loop to receive trading responses"""
         assert self.ws, "Websocket connection not established."
-        async for msg in self.ws:
-            data = json.loads(msg)
 
-            # Handle responses with request IDs
-            rid = data.get("user_request_id")
-            if rid and rid in self._pending:
-                self._pending[rid].set_result(data)
-                del self._pending[rid]
+        try:
+            async for msg in self.ws:
+                data = json.loads(msg)
 
-            # Handle market data updates
-            msg_type = data.get("type")
-            if msg_type == "market_data_update":
-                try:
-                    parsed_orderbook_depths = {
-                        instr_id: OrderbookDepth(**depth_data)
-                        for instr_id, depth_data in data.get("orderbook_depths", {}).items()
-                    }
-                    parsed_candles = CandleDataResponse(**data.get("candles", {}))
+                # Only handle responses with request IDs (trading responses)
+                rid = data.get("user_request_id")
+                if rid and rid in self._pending:
+                    self._pending[rid].set_result(data)
+                    del self._pending[rid]
 
-                    market_data = MarketDataResponse(
-                        type=data["type"],
-                        time=data["time"],
-                        candles=parsed_candles,
-                        orderbook_depths=parsed_orderbook_depths,
-                        events=data.get("events", []),
-                        user_request_id=data.get("user_request_id")
-                    )
+                # We don't process market data here - that's handled by MarketDataCache
 
-                    # Cache the data
-                    self._market_data_cache = market_data
-                    self._orderbook_cache = parsed_orderbook_depths
-
-                except Exception as e:
-                    print(f"Error parsing market data: {e}")
+        except websockets.exceptions.ConnectionClosed:
+            logger.warning("GameAPI WebSocket connection closed")
+        except Exception as e:
+            logger.error(f"Error in GameAPI receive loop: {e}")
 
     async def _send(self, payload: BaseMessage, timeout: int = 3):
         """Internal method to send messages and wait for responses"""
@@ -197,6 +169,7 @@ class GameAPI:
         self._pending[rid] = fut
 
         await self.ws.send(json.dumps(payload_dict))
+        logger.debug(f"Sent request {rid}: {payload.type}")
 
         try:
             resp = await asyncio.wait_for(fut, timeout)
@@ -227,12 +200,12 @@ class GameAPI:
                 del self._pending[rid]
             raise TimeoutError(f"Request {rid} timed out")
 
-    # High-level trading methods
+    # ========== Trading Methods ==========
 
     async def buy_future(self, underlying: str, expiry_seconds: int, price: Price_t, quantity: Quantity_t = 1):
         """Buy a future contract"""
         instrument_id = f"{underlying}_future_{expiry_seconds}"
-        expiry_ms = (expiry_seconds + 10) * 1000  # Add 10s buffer, convert to ms
+        expiry_ms = (expiry_seconds + 10) * 1000
 
         order = AddOrderRequest(
             user_request_id="",
@@ -338,116 +311,74 @@ class GameAPI:
         req = GetPendingOrdersRequest(user_request_id="")
         return await self._send(req)
 
+    # ========== Market Data Methods (using MarketDataCache) ==========
+
     def get_orderbook(self, instrument_id: InstrumentID_t) -> Optional[pd.DataFrame]:
         """Get orderbook for a specific instrument as DataFrame"""
-        if instrument_id not in self._orderbook_cache:
+        if not self.market_cache:
             return None
 
-        orderbook = self._orderbook_cache[instrument_id]
+        orderbook = self.market_cache.get_current_orderbook(instrument_id)
+        if not orderbook:
+            return None
 
         # Convert to DataFrame
-        bids_data = [(price, qty, 'bid') for price, qty in orderbook.bids.items()]
-        asks_data = [(price, qty, 'ask') for price, qty in orderbook.asks.items()]
+        bids_data = [(int(price)/100, int(qty), 'bid') for price, qty in orderbook.bids.items()]
+        asks_data = [(int(price)/100, int(qty), 'ask') for price, qty in orderbook.asks.items()]
+
+        if not bids_data and not asks_data:
+            return pd.DataFrame(columns=['price', 'quantity', 'side'])
 
         df = pd.DataFrame(bids_data + asks_data, columns=['price', 'quantity', 'side'])
-        df['price'] = df['price'] / 100  # Convert cents to dollars
         df = df.sort_values('price', ascending=False)
 
         return df
 
     def get_all_orderbooks(self) -> Dict[str, pd.DataFrame]:
         """Get all orderbooks as DataFrames"""
+        if not self.market_cache:
+            return {}
+
+        instruments = self.market_cache.get_all_instruments()
         return {instr: self.get_orderbook(instr)
-                for instr in self._orderbook_cache.keys()}
+                for instr in instruments
+                if self.get_orderbook(instr) is not None}
 
     def get_best_bid_ask(self, instrument_id: InstrumentID_t) -> Optional[Dict[str, Any]]:
         """Get best bid and ask prices for an instrument"""
-        if instrument_id not in self._orderbook_cache:
+        if not self.market_cache:
             return None
 
-        orderbook = self._orderbook_cache[instrument_id]
-
-        best_bid = max(orderbook.bids.keys()) if orderbook.bids else None
-        best_ask = min(orderbook.asks.keys()) if orderbook.asks else None
+        best_bid, best_ask = self.market_cache.get_best_prices(instrument_id)
+        spread = self.market_cache.get_current_spread(instrument_id)
 
         return {
             'instrument': instrument_id,
-            'best_bid': best_bid / 100 if best_bid else None,
-            'best_ask': best_ask / 100 if best_ask else None,
-            'spread': (best_ask - best_bid) / 100 if best_bid and best_ask else None
+            'best_bid': int(best_bid) / 100 if best_bid else None,
+            'best_ask': int(best_ask) / 100 if best_ask else None,
+            'spread': int(spread) / 100 if spread else None
         }
 
-    def get_market_data(self) -> Optional[MarketDataResponse]:
-        """Get cached market data"""
-        return self._market_data_cache
+    def get_instrument_info(self, instrument_id: InstrumentID_t) -> Optional[InstrumentInfo]:
+        """Get detailed information about an instrument"""
+        if not self.market_cache:
+            return None
+        return self.market_cache.get_instrument_info(instrument_id)
 
     def list_instruments(self) -> List[str]:
         """List all available instruments"""
-        return list(self._orderbook_cache.keys())
+        if not self.market_cache:
+            return []
+        return self.market_cache.get_all_instruments()
 
+    def get_recent_events(self, limit: int = 100) -> List[Dict[str, Any]]:
+        """Get recent market events"""
+        if not self.market_cache:
+            return []
+        return self.market_cache.get_recent_events(limit)
 
-# Example usage
-async def example_usage():
-    # Initialize API
-    api = GameAPI("ws://192.168.100.10:9001/trade", "5c440ac1-b111-405b-8c3d-a35bfe99933e")
-
-    # Connect
-    await api.connect()
-
-    # Wait a bit for market data
-    await asyncio.sleep(2)
-
-    # List all instruments first to see what's available
-    instruments = api.list_instruments()
-    print(f"Available instruments: {instruments[:5]}...")  # Show first 5
-
-    # Find a future instrument if available
-    future_instrument = next((instr for instr in instruments if "_future_" in instr), None)
-    if future_instrument:
-        # Extract parameters from the instrument ID
-        parts = future_instrument.split('_')
-        underlying = parts[0]
-        expiry_seconds = int(parts[2])
-
-        # Buy a future using the available instrument
-        resp = await api.buy_future(underlying, expiry_seconds, 39000, quantity=2)
-        print(f"Buy future response: {resp}")
-
-        # Get orderbook data for this instrument
-        orderbook_df = api.get_orderbook(future_instrument)
-        if orderbook_df is not None:
-            print("\nOrderbook:")
-            print(orderbook_df)
-
-        # Get best bid/ask for this instrument
-        best_prices = api.get_best_bid_ask(future_instrument)
-        print(f"\nBest prices: {best_prices}")
-    else:
-        print("No future instruments available")
-
-    # Find a call option instrument if available
-    call_instrument = next((instr for instr in instruments if "_call_" in instr), None)
-    if call_instrument:
-        # Extract parameters from the instrument ID
-        parts = call_instrument.split('_')
-        underlying = parts[0]
-        strike = int(parts[2])
-        expiry_seconds = int(parts[3])
-
-        # Buy a call option using the available instrument
-        resp = await api.buy_call(underlying, strike, expiry_seconds, 1000)
-        print(f"Buy call response: {resp}")
-    else:
-        print("No call option instruments available")
-
-    # Get inventory
-    inventory = await api.get_inventory()
-    print(f"Inventory: {inventory}")
-
-    # Disconnect
-    await api.disconnect()
-
-
-if __name__ == "__main__":
-    # Run example
-    asyncio.run(example_usage())
+    def get_market_statistics(self) -> Dict[str, Any]:
+        """Get market statistics"""
+        if not self.market_cache:
+            return {}
+        return self.market_cache.get_market_statistics()
