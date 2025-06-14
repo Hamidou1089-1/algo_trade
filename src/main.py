@@ -2,6 +2,7 @@ import asyncio
 import logging
 from typing import List, Optional
 from market_data_cache import MarketDataCache
+from test_bot import TestBot
 
 # Global market cache instance that will be shared across all bots
 global_market_cache: Optional[MarketDataCache] = None
@@ -117,16 +118,25 @@ async def launch_trading_system():
     
     This function:
     1. Initializes the market data cache
-    2. Starts all registered trading bots
-    3. Monitors the system
+    2. Registers trading bots
+    3. Starts all registered trading bots
+    4. Monitors the system
     """
     global bot_manager
     
     try:
         logger.info("=== STARTING ALGORITHMIC TRADING SYSTEM ===")
         
-        # Initialize market data cache
+        # Initialize market data cache FIRST
         await bot_manager.initialize_market_cache()
+        
+        # NOW register bots (after cache is initialized)
+        logger.info("Registering trading bots...")
+        register_trading_bot(TestBot, config={'max_position': 3})
+        
+        # You can register multiple bots here:
+        # register_trading_bot(TestBot, config={'max_position': 5})  # Second instance
+        # register_trading_bot(AnotherBot, config={'param': 'value'})
         
         # Set running flag
         bot_manager.running = True
@@ -179,11 +189,7 @@ async def main():
     Example main function showing how to use the trading system
     """
     
-    # Example: Register trading bots here
-    # register_trading_bot(ArbitrageBot, config={'max_position': 100})
-    # register_trading_bot(MomentumBot, config={'lookback_period': 60})
-    
-    # Launch the trading system
+    # Launch the trading system (bot registration happens inside launch_trading_system)
     await launch_trading_system()
 
 

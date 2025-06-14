@@ -31698,3 +31698,2008 @@
 2025-06-14 21:03:15,702 - INFO -   $SIMP_put_99742_405: Bid=56, Ask=61, Spread=5
 2025-06-14 21:03:15,702 - INFO -   $SIMP_put_99770_285: Bid=92, Ask=122, Spread=30
 2025-06-14 21:03:15,702 - INFO - ==============================
+2025-06-14 22:19:31,710 - INFO - === STARTING ALGORITHMIC TRADING SYSTEM ===
+2025-06-14 22:19:31,711 - INFO - Initializing market data cache...
+2025-06-14 22:19:31,711 - INFO - Attempting to connect to market at ws://192.168.100.10:9001/trade?team_secret=5c440ac1-b111-405b-8c3d-a35bfe99933e
+2025-06-14 22:19:32,639 - INFO - Connected to market successfully. Welcome message: Connected to OrderBook API
+2025-06-14 22:19:32,640 - INFO - Market data cache initialized and connected
+2025-06-14 22:19:32,640 - INFO - Registering trading bots...
+2025-06-14 22:19:32,640 - INFO - TestBot initialized
+2025-06-14 22:19:32,640 - INFO - Registered bot: TestBot
+2025-06-14 22:19:32,640 - INFO - === MARKET DATA SUMMARY ===
+2025-06-14 22:19:32,640 - INFO - Connection uptime: 0.0 seconds
+2025-06-14 22:19:32,640 - INFO - Total updates received: 0
+2025-06-14 22:19:32,640 - INFO - Instruments discovered: 0
+2025-06-14 22:19:32,640 - INFO - Active orderbooks: 0
+2025-06-14 22:19:32,640 - INFO - Total events cached: 0
+2025-06-14 22:19:32,640 - INFO - Instruments with current prices:
+2025-06-14 22:19:32,641 - INFO - ==============================
+2025-06-14 22:19:32,641 - INFO - Starting 1 trading bots...
+2025-06-14 22:19:32,641 - INFO - All trading bots started
+2025-06-14 22:19:32,641 - INFO - Starting TestBot...
+2025-06-14 22:19:33,338 - INFO - New instrument discovered: $CARD_call_100221_960
+2025-06-14 22:19:33,338 - INFO - Raw orderbook for $CARD_call_100221_960:
+2025-06-14 22:19:33,338 - INFO -   Bids: {'529': 2, '544': 4, '639': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,338 - INFO -   First bid price: 529 (type: <class 'str'>)
+2025-06-14 22:19:33,338 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,338 - INFO -   Asks: {'648': 4, '653': 7, '667': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,338 - INFO -   First ask price: 648 (type: <class 'str'>)
+2025-06-14 22:19:33,338 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,338 - INFO - New instrument discovered: $CARD_call_100350_975
+2025-06-14 22:19:33,338 - INFO - Raw orderbook for $CARD_call_100350_975:
+2025-06-14 22:19:33,338 - INFO -   Bids: {'412': 2, '449': 3, '487': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,338 - INFO -   First bid price: 412 (type: <class 'str'>)
+2025-06-14 22:19:33,338 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,338 - INFO -   Asks: {'500': 2, '501': 8, '505': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,338 - INFO -   First ask price: 500 (type: <class 'str'>)
+2025-06-14 22:19:33,338 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,339 - INFO - New instrument discovered: $CARD_call_100740_930
+2025-06-14 22:19:33,339 - INFO - Raw orderbook for $CARD_call_100740_930:
+2025-06-14 22:19:33,339 - INFO -   Bids: {'94': 5, '106': 3, '109': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,339 - INFO -   First bid price: 94 (type: <class 'str'>)
+2025-06-14 22:19:33,339 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,339 - INFO -   Asks: {'128': 1, '131': 3, '135': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,339 - INFO -   First ask price: 128 (type: <class 'str'>)
+2025-06-14 22:19:33,339 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,339 - INFO - New instrument discovered: $CARD_call_100822_945
+2025-06-14 22:19:33,339 - INFO - Raw orderbook for $CARD_call_100822_945:
+2025-06-14 22:19:33,339 - INFO -   Bids: {'250': 4, '252': 1, '254': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,339 - INFO -   First bid price: 250 (type: <class 'str'>)
+2025-06-14 22:19:33,339 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,339 - INFO -   Asks: {'417': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,339 - INFO -   First ask price: 417 (type: <class 'str'>)
+2025-06-14 22:19:33,339 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,339 - INFO - New instrument discovered: $CARD_call_101213_960
+2025-06-14 22:19:33,339 - INFO - Raw orderbook for $CARD_call_101213_960:
+2025-06-14 22:19:33,339 - INFO -   Bids: {'270': 3, '271': 2, '292': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,339 - INFO -   First bid price: 270 (type: <class 'str'>)
+2025-06-14 22:19:33,339 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,339 - INFO -   Asks: {'313': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,339 - INFO -   First ask price: 313 (type: <class 'str'>)
+2025-06-14 22:19:33,339 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,340 - INFO - New instrument discovered: $CARD_call_101344_975
+2025-06-14 22:19:33,340 - INFO - Raw orderbook for $CARD_call_101344_975:
+2025-06-14 22:19:33,340 - INFO -   Bids: {'158': 4, '167': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,340 - INFO -   First bid price: 158 (type: <class 'str'>)
+2025-06-14 22:19:33,340 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,340 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,340 - INFO - New instrument discovered: $CARD_call_101737_930
+2025-06-14 22:19:33,340 - INFO - Raw orderbook for $CARD_call_101737_930:
+2025-06-14 22:19:33,340 - INFO -   Bids: {'10': 3, '11': 1, '26': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,340 - INFO -   First bid price: 10 (type: <class 'str'>)
+2025-06-14 22:19:33,340 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,340 - INFO -   Asks: {'34': 4, '35': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,340 - INFO -   First ask price: 34 (type: <class 'str'>)
+2025-06-14 22:19:33,340 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,340 - INFO - New instrument discovered: $CARD_call_96868_945
+2025-06-14 22:19:33,340 - INFO - Raw orderbook for $CARD_call_96868_945:
+2025-06-14 22:19:33,340 - INFO -   Bids: {'2967': 4, '2983': 3, '3006': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,340 - INFO -   First bid price: 2967 (type: <class 'str'>)
+2025-06-14 22:19:33,340 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,340 - INFO -   Asks: {'3513': 1, '3539': 4, '3652': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,340 - INFO -   First ask price: 3513 (type: <class 'str'>)
+2025-06-14 22:19:33,340 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,340 - INFO - New instrument discovered: $CARD_call_97244_960
+2025-06-14 22:19:33,340 - INFO - Raw orderbook for $CARD_call_97244_960:
+2025-06-14 22:19:33,340 - INFO -   Bids: {'2111': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,340 - INFO -   First bid price: 2111 (type: <class 'str'>)
+2025-06-14 22:19:33,340 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,340 - INFO -   Asks: {'2794': 6, '2816': 5, '2824': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,341 - INFO -   First ask price: 2794 (type: <class 'str'>)
+2025-06-14 22:19:33,341 - INFO -   First ask quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,341 - INFO - New instrument discovered: $CARD_call_97369_975
+2025-06-14 22:19:33,341 - INFO - Raw orderbook for $CARD_call_97369_975:
+2025-06-14 22:19:33,341 - INFO -   Bids: {'2428': 3, '2669': 1, '2800': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,341 - INFO -   First bid price: 2428 (type: <class 'str'>)
+2025-06-14 22:19:33,341 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,341 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,341 - INFO - New instrument discovered: $CARD_call_97747_930
+2025-06-14 22:19:33,341 - INFO - Raw orderbook for $CARD_call_97747_930:
+2025-06-14 22:19:33,341 - INFO -   Bids: {'1771': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,341 - INFO -   First bid price: 1771 (type: <class 'str'>)
+2025-06-14 22:19:33,341 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,341 - INFO -   Asks: {'2253': 4, '2270': 1, '2388': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,341 - INFO -   First ask price: 2253 (type: <class 'str'>)
+2025-06-14 22:19:33,341 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,341 - INFO - New instrument discovered: $CARD_call_97856_945
+2025-06-14 22:19:33,341 - INFO - Raw orderbook for $CARD_call_97856_945:
+2025-06-14 22:19:33,341 - INFO -   Bids: {'1898': 3, '1905': 2, '2040': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,341 - INFO -   First bid price: 1898 (type: <class 'str'>)
+2025-06-14 22:19:33,341 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,341 - INFO -   Asks: {'2081': 1, '2247': 1, '2434': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,341 - INFO -   First ask price: 2081 (type: <class 'str'>)
+2025-06-14 22:19:33,341 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,341 - INFO - New instrument discovered: $CARD_call_98236_960
+2025-06-14 22:19:33,341 - INFO - Raw orderbook for $CARD_call_98236_960:
+2025-06-14 22:19:33,341 - INFO -   Bids: {'2192': 2, '2233': 3, '2286': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,341 - INFO -   First bid price: 2192 (type: <class 'str'>)
+2025-06-14 22:19:33,341 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,341 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,342 - INFO - New instrument discovered: $CARD_call_98363_975
+2025-06-14 22:19:33,342 - INFO - Raw orderbook for $CARD_call_98363_975:
+2025-06-14 22:19:33,342 - INFO -   Bids: {'1520': 5, '1528': 6, '1767': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,342 - INFO -   First bid price: 1520 (type: <class 'str'>)
+2025-06-14 22:19:33,342 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,342 - INFO -   Asks: {'1771': 2, '1903': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,342 - INFO -   First ask price: 1771 (type: <class 'str'>)
+2025-06-14 22:19:33,342 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,342 - INFO - New instrument discovered: $CARD_call_98745_930
+2025-06-14 22:19:33,342 - INFO - Raw orderbook for $CARD_call_98745_930:
+2025-06-14 22:19:33,342 - INFO -   Bids: {'1103': 3, '1140': 4, '1145': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,342 - INFO -   First bid price: 1103 (type: <class 'str'>)
+2025-06-14 22:19:33,342 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,342 - INFO -   Asks: {'1350': 4, '1688': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,342 - INFO -   First ask price: 1350 (type: <class 'str'>)
+2025-06-14 22:19:33,342 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,342 - INFO - New instrument discovered: $CARD_call_98845_945
+2025-06-14 22:19:33,342 - INFO - Raw orderbook for $CARD_call_98845_945:
+2025-06-14 22:19:33,342 - INFO -   Bids: {'1383': 1, '1461': 12, '1566': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,342 - INFO -   First bid price: 1383 (type: <class 'str'>)
+2025-06-14 22:19:33,342 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,342 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,342 - INFO - New instrument discovered: $CARD_call_99228_960
+2025-06-14 22:19:33,342 - INFO - Raw orderbook for $CARD_call_99228_960:
+2025-06-14 22:19:33,342 - INFO -   Bids: {'1104': 2, '1129': 3, '1138': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,342 - INFO -   First bid price: 1104 (type: <class 'str'>)
+2025-06-14 22:19:33,343 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,343 - INFO -   Asks: {'1229': 3, '1230': 3, '1244': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,343 - INFO -   First ask price: 1229 (type: <class 'str'>)
+2025-06-14 22:19:33,343 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,343 - INFO - New instrument discovered: $CARD_call_99357_975
+2025-06-14 22:19:33,343 - INFO - Raw orderbook for $CARD_call_99357_975:
+2025-06-14 22:19:33,343 - INFO -   Bids: {'813': 5, '1047': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,343 - INFO -   First bid price: 813 (type: <class 'str'>)
+2025-06-14 22:19:33,343 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,343 - INFO -   Asks: {'1073': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,343 - INFO -   First ask price: 1073 (type: <class 'str'>)
+2025-06-14 22:19:33,343 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,343 - INFO - New instrument discovered: $CARD_call_99742_930
+2025-06-14 22:19:33,343 - INFO - Raw orderbook for $CARD_call_99742_930:
+2025-06-14 22:19:33,343 - INFO -   Bids: {'476': 4, '480': 1, '490': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,343 - INFO -   First bid price: 476 (type: <class 'str'>)
+2025-06-14 22:19:33,343 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,343 - INFO -   Asks: {'507': 2, '519': 4, '570': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,343 - INFO -   First ask price: 507 (type: <class 'str'>)
+2025-06-14 22:19:33,343 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,343 - INFO - New instrument discovered: $CARD_call_99833_945
+2025-06-14 22:19:33,343 - INFO - Raw orderbook for $CARD_call_99833_945:
+2025-06-14 22:19:33,343 - INFO -   Bids: {'638': 3, '668': 5, '670': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,343 - INFO -   First bid price: 638 (type: <class 'str'>)
+2025-06-14 22:19:33,343 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,343 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,344 - INFO - New instrument discovered: $CARD_future_930
+2025-06-14 22:19:33,344 - INFO - Raw orderbook for $CARD_future_930:
+2025-06-14 22:19:33,344 - INFO -   Bids: {'100418': 2, '100688': 1, '100764': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,344 - INFO -   First bid price: 100418 (type: <class 'str'>)
+2025-06-14 22:19:33,344 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,344 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,344 - INFO - New instrument discovered: $CARD_future_945
+2025-06-14 22:19:33,344 - INFO - Raw orderbook for $CARD_future_945:
+2025-06-14 22:19:33,344 - INFO -   Bids: {'99319': 3, '99435': 1, '99451': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,344 - INFO -   First bid price: 99319 (type: <class 'str'>)
+2025-06-14 22:19:33,344 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,344 - INFO -   Asks: {'142937': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,344 - INFO -   First ask price: 142937 (type: <class 'str'>)
+2025-06-14 22:19:33,344 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,344 - INFO - New instrument discovered: $CARD_future_960
+2025-06-14 22:19:33,344 - INFO - Raw orderbook for $CARD_future_960:
+2025-06-14 22:19:33,344 - INFO -   Bids: {'99999': 7, '100392': 4, '100848': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,344 - INFO -   First bid price: 99999 (type: <class 'str'>)
+2025-06-14 22:19:33,344 - INFO -   First bid quantity: 7 (type: <class 'int'>)
+2025-06-14 22:19:33,344 - INFO -   Asks: {'101499': 1, '101702': 5, '102579': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,344 - INFO -   First ask price: 101499 (type: <class 'str'>)
+2025-06-14 22:19:33,344 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,344 - INFO - New instrument discovered: $CARD_future_975
+2025-06-14 22:19:33,344 - INFO - Raw orderbook for $CARD_future_975:
+2025-06-14 22:19:33,344 - INFO -   Bids: {'98010': 3, '99451': 3, '99473': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,345 - INFO -   First bid price: 98010 (type: <class 'str'>)
+2025-06-14 22:19:33,345 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,345 - INFO -   Asks: {'99984': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,345 - INFO -   First ask price: 99984 (type: <class 'str'>)
+2025-06-14 22:19:33,345 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,345 - INFO - New instrument discovered: $CARD_put_100221_960
+2025-06-14 22:19:33,345 - INFO - Raw orderbook for $CARD_put_100221_960:
+2025-06-14 22:19:33,345 - INFO -   Bids: {'795': 1, '822': 4, '870': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,345 - INFO -   First bid price: 795 (type: <class 'str'>)
+2025-06-14 22:19:33,345 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,345 - INFO -   Asks: {'874': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,345 - INFO -   First ask price: 874 (type: <class 'str'>)
+2025-06-14 22:19:33,346 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,346 - INFO - New instrument discovered: $CARD_put_100350_975
+2025-06-14 22:19:33,346 - INFO - Raw orderbook for $CARD_put_100350_975:
+2025-06-14 22:19:33,346 - INFO -   Bids: {'744': 4, '758': 3, '801': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,346 - INFO -   First bid price: 744 (type: <class 'str'>)
+2025-06-14 22:19:33,346 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,346 - INFO -   Asks: {'831': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,346 - INFO -   First ask price: 831 (type: <class 'str'>)
+2025-06-14 22:19:33,346 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,346 - INFO - New instrument discovered: $CARD_put_100740_930
+2025-06-14 22:19:33,346 - INFO - Raw orderbook for $CARD_put_100740_930:
+2025-06-14 22:19:33,346 - INFO -   Bids: {'878': 2, '931': 1, '942': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,346 - INFO -   First bid price: 878 (type: <class 'str'>)
+2025-06-14 22:19:33,346 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,346 - INFO -   Asks: {'1004': 3, '1005': 2, '1013': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,346 - INFO -   First ask price: 1004 (type: <class 'str'>)
+2025-06-14 22:19:33,346 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,346 - INFO - New instrument discovered: $CARD_put_100822_945
+2025-06-14 22:19:33,346 - INFO - Raw orderbook for $CARD_put_100822_945:
+2025-06-14 22:19:33,346 - INFO -   Bids: {'857': 4, '953': 1, '989': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,346 - INFO -   First bid price: 857 (type: <class 'str'>)
+2025-06-14 22:19:33,346 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,346 - INFO -   Asks: {'1159': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,346 - INFO -   First ask price: 1159 (type: <class 'str'>)
+2025-06-14 22:19:33,346 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,346 - INFO - New instrument discovered: $CARD_put_101213_960
+2025-06-14 22:19:33,347 - INFO - Raw orderbook for $CARD_put_101213_960:
+2025-06-14 22:19:33,347 - INFO -   Bids: {'1134': 4, '1233': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,347 - INFO -   First bid price: 1134 (type: <class 'str'>)
+2025-06-14 22:19:33,347 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,347 - INFO -   Asks: {'1346': 2, '1507': 4, '1544': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,347 - INFO -   First ask price: 1346 (type: <class 'str'>)
+2025-06-14 22:19:33,347 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,347 - INFO - New instrument discovered: $CARD_put_101344_975
+2025-06-14 22:19:33,347 - INFO - Raw orderbook for $CARD_put_101344_975:
+2025-06-14 22:19:33,347 - INFO -   Bids: {'1527': 2, '1592': 3, '1646': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,347 - INFO -   First bid price: 1527 (type: <class 'str'>)
+2025-06-14 22:19:33,347 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,348 - INFO -   Asks: {'1676': 1, '1691': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,348 - INFO -   First ask price: 1676 (type: <class 'str'>)
+2025-06-14 22:19:33,348 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,348 - INFO - New instrument discovered: $CARD_put_101737_930
+2025-06-14 22:19:33,348 - INFO - Raw orderbook for $CARD_put_101737_930:
+2025-06-14 22:19:33,348 - INFO -   Bids: {'1605': 1, '1765': 7, '1793': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,348 - INFO -   First bid price: 1605 (type: <class 'str'>)
+2025-06-14 22:19:33,348 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,348 - INFO -   Asks: {'1917': 1, '2581': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,348 - INFO -   First ask price: 1917 (type: <class 'str'>)
+2025-06-14 22:19:33,348 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,348 - INFO - New instrument discovered: $CARD_put_96868_945
+2025-06-14 22:19:33,348 - INFO - Raw orderbook for $CARD_put_96868_945:
+2025-06-14 22:19:33,348 - INFO -   Bids: {'3': 8, '4': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,348 - INFO -   First bid price: 3 (type: <class 'str'>)
+2025-06-14 22:19:33,348 - INFO -   First bid quantity: 8 (type: <class 'int'>)
+2025-06-14 22:19:33,348 - INFO -   Asks: {'5': 10} (type: <class 'dict'>)
+2025-06-14 22:19:33,348 - INFO -   First ask price: 5 (type: <class 'str'>)
+2025-06-14 22:19:33,350 - INFO -   First ask quantity: 10 (type: <class 'int'>)
+2025-06-14 22:19:33,350 - INFO - New instrument discovered: $CARD_put_97244_960
+2025-06-14 22:19:33,351 - INFO - Raw orderbook for $CARD_put_97244_960:
+2025-06-14 22:19:33,351 - INFO -   Bids: {'34': 2, '36': 4, '38': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,351 - INFO -   First bid price: 34 (type: <class 'str'>)
+2025-06-14 22:19:33,351 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,351 - INFO -   Asks: {'43': 4, '44': 7, '45': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,351 - INFO -   First ask price: 43 (type: <class 'str'>)
+2025-06-14 22:19:33,351 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,351 - INFO - New instrument discovered: $CARD_put_97369_975
+2025-06-14 22:19:33,351 - INFO - Raw orderbook for $CARD_put_97369_975:
+2025-06-14 22:19:33,351 - INFO -   Bids: {'17': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,351 - INFO -   First bid price: 17 (type: <class 'str'>)
+2025-06-14 22:19:33,351 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,351 - INFO -   Asks: {'18': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,351 - INFO -   First ask price: 18 (type: <class 'str'>)
+2025-06-14 22:19:33,351 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,351 - INFO - New instrument discovered: $CARD_put_97747_930
+2025-06-14 22:19:33,351 - INFO - Raw orderbook for $CARD_put_97747_930:
+2025-06-14 22:19:33,351 - INFO -   Bids: {'2': 9} (type: <class 'dict'>)
+2025-06-14 22:19:33,351 - INFO -   First bid price: 2 (type: <class 'str'>)
+2025-06-14 22:19:33,351 - INFO -   First bid quantity: 9 (type: <class 'int'>)
+2025-06-14 22:19:33,351 - INFO -   Asks: {'3': 4, '7': 17, '10': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,351 - INFO -   First ask price: 3 (type: <class 'str'>)
+2025-06-14 22:19:33,351 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,351 - INFO - New instrument discovered: $CARD_put_97856_945
+2025-06-14 22:19:33,351 - INFO - Raw orderbook for $CARD_put_97856_945:
+2025-06-14 22:19:33,351 - INFO -   Bids: {'30': 1, '34': 2, '35': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,351 - INFO -   First bid price: 30 (type: <class 'str'>)
+2025-06-14 22:19:33,352 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,352 - INFO -   Asks: {'36': 8, '37': 5, '39': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,352 - INFO -   First ask price: 36 (type: <class 'str'>)
+2025-06-14 22:19:33,352 - INFO -   First ask quantity: 8 (type: <class 'int'>)
+2025-06-14 22:19:33,352 - INFO - New instrument discovered: $CARD_put_98236_960
+2025-06-14 22:19:33,352 - INFO - Raw orderbook for $CARD_put_98236_960:
+2025-06-14 22:19:33,352 - INFO -   Bids: {'130': 4, '140': 1, '146': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,352 - INFO -   First bid price: 130 (type: <class 'str'>)
+2025-06-14 22:19:33,352 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,352 - INFO -   Asks: {'150': 3, '158': 4, '165': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,352 - INFO -   First ask price: 150 (type: <class 'str'>)
+2025-06-14 22:19:33,353 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,353 - INFO - New instrument discovered: $CARD_put_98363_975
+2025-06-14 22:19:33,353 - INFO - Raw orderbook for $CARD_put_98363_975:
+2025-06-14 22:19:33,353 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,353 - INFO -   Asks: {'83': 3, '96': 2, '97': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,353 - INFO -   First ask price: 83 (type: <class 'str'>)
+2025-06-14 22:19:33,353 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,353 - INFO - New instrument discovered: $CARD_put_98745_930
+2025-06-14 22:19:33,353 - INFO - Raw orderbook for $CARD_put_98745_930:
+2025-06-14 22:19:33,353 - INFO -   Bids: {'42': 4, '64': 1, '67': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,353 - INFO -   First bid price: 42 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {'84': 6, '87': 2, '99': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First ask price: 84 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First ask quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO - New instrument discovered: $CARD_put_98845_945
+2025-06-14 22:19:33,354 - INFO - Raw orderbook for $CARD_put_98845_945:
+2025-06-14 22:19:33,354 - INFO -   Bids: {'156': 3, '159': 2, '162': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First bid price: 156 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {'168': 6, '173': 2, '181': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First ask price: 168 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First ask quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO - New instrument discovered: $CARD_put_99228_960
+2025-06-14 22:19:33,354 - INFO - Raw orderbook for $CARD_put_99228_960:
+2025-06-14 22:19:33,354 - INFO -   Bids: {'311': 1, '317': 1, '343': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First bid price: 311 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {'367': 2, '385': 3, '386': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First ask price: 367 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO - New instrument discovered: $CARD_put_99357_975
+2025-06-14 22:19:33,354 - INFO - Raw orderbook for $CARD_put_99357_975:
+2025-06-14 22:19:33,354 - INFO -   Bids: {'313': 4, '321': 3, '331': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First bid price: 313 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {'334': 1, '348': 4, '378': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First ask price: 334 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO - New instrument discovered: $CARD_put_99742_930
+2025-06-14 22:19:33,354 - INFO - Raw orderbook for $CARD_put_99742_930:
+2025-06-14 22:19:33,354 - INFO -   Bids: {'188': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First bid price: 188 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {'210': 1, '383': 2, '394': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First ask price: 210 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO - New instrument discovered: $CARD_put_99833_945
+2025-06-14 22:19:33,354 - INFO - Raw orderbook for $CARD_put_99833_945:
+2025-06-14 22:19:33,354 - INFO -   Bids: {'454': 6, '460': 2, '482': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First bid price: 454 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {'552': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First ask price: 552 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO - New instrument discovered: $GARR_call_102599_930
+2025-06-14 22:19:33,354 - INFO - Raw orderbook for $GARR_call_102599_930:
+2025-06-14 22:19:33,354 - INFO -   Bids: {'2454': 3, '2495': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First bid price: 2454 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {'2744': 2, '2784': 3, '2998': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First ask price: 2744 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO - New instrument discovered: $GARR_call_102776_945
+2025-06-14 22:19:33,354 - INFO - Raw orderbook for $GARR_call_102776_945:
+2025-06-14 22:19:33,354 - INFO -   Bids: {'2446': 4, '2556': 5, '2636': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First bid price: 2446 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {'2641': 1, '2972': 2, '3042': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First ask price: 2641 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO - New instrument discovered: $GARR_call_102976_960
+2025-06-14 22:19:33,354 - INFO - Raw orderbook for $GARR_call_102976_960:
+2025-06-14 22:19:33,354 - INFO -   Bids: {'1866': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First bid price: 1866 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {'2429': 2, '2480': 5, '2510': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First ask price: 2429 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO - New instrument discovered: $GARR_call_103445_975
+2025-06-14 22:19:33,354 - INFO - Raw orderbook for $GARR_call_103445_975:
+2025-06-14 22:19:33,354 - INFO -   Bids: {'1807': 7, '2134': 1, '2239': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First bid price: 1807 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 7 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO - New instrument discovered: $GARR_call_103646_930
+2025-06-14 22:19:33,354 - INFO - Raw orderbook for $GARR_call_103646_930:
+2025-06-14 22:19:33,354 - INFO -   Bids: {'1657': 2, '1669': 3, '1703': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First bid price: 1657 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,354 - INFO -   Asks: {'1990': 1, '2028': 2, '2039': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,354 - INFO -   First ask price: 1990 (type: <class 'str'>)
+2025-06-14 22:19:33,354 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_103824_945
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_103824_945:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'1296': 3, '1348': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 1296 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'1564': 4, '1574': 1, '1654': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 1564 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_104027_960
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_104027_960:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'1582': 1, '1639': 4, '1643': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 1582 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_104501_975
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_104501_975:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'859': 5, '946': 4, '995': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 859 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'1002': 4, '1008': 1, '1047': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 1002 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_104693_930
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_104693_930:
+2025-06-14 22:19:33,355 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'820': 3, '898': 1, '914': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 820 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_104873_945
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_104873_945:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'590': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 590 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'599': 2, '606': 5, '632': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 599 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_105078_960
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_105078_960:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'475': 2, '482': 3, '508': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 475 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'579': 4, '624': 5, '629': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 579 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_105556_975
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_105556_975:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'246': 5, '255': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 246 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'290': 3, '298': 3, '307': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 290 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_105739_930
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_105739_930:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'43': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 43 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'91': 1, '102': 1, '120': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 91 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_105922_945
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_105922_945:
+2025-06-14 22:19:33,355 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'55': 2, '73': 1, '82': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 55 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_106128_960
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_106128_960:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'50': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 50 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'59': 7, '62': 3, '77': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 59 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 7 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_106612_975
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_106612_975:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'34': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 34 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'35': 5, '44': 5, '46': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 35 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_106786_930
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_106786_930:
+2025-06-14 22:19:33,355 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_106970_945
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_106970_945:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'1': 1, '2': 14, '3': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO - New instrument discovered: $GARR_call_107179_960
+2025-06-14 22:19:33,355 - INFO - Raw orderbook for $GARR_call_107179_960:
+2025-06-14 22:19:33,355 - INFO -   Bids: {'2': 16, '3': 7} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First bid price: 2 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First bid quantity: 16 (type: <class 'int'>)
+2025-06-14 22:19:33,355 - INFO -   Asks: {'4': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,355 - INFO -   First ask price: 4 (type: <class 'str'>)
+2025-06-14 22:19:33,355 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_call_107668_975
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_call_107668_975:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'1': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_future_930
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_future_930:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'105631': 2, '105839': 3, '106100': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 105631 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_future_945
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_future_945:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'90000': 1, '104398': 2, '104880': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 90000 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_future_960
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_future_960:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'105603': 2, '105955': 4, '106436': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 105603 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {'107064': 2, '107429': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First ask price: 107064 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_future_975
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_future_975:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'103326': 3, '104862': 5, '104973': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 103326 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {'105371': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First ask price: 105371 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_102599_930
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_102599_930:
+2025-06-14 22:19:33,356 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_102776_945
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_102776_945:
+2025-06-14 22:19:33,356 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_102976_960
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_102976_960:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'1': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_103445_975
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_103445_975:
+2025-06-14 22:19:33,356 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {'2': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First ask price: 2 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_103646_930
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_103646_930:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'1': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_103824_945
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_103824_945:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'1': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {'2': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First ask price: 2 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_104027_960
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_104027_960:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'6': 3, '7': 10, '8': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 6 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_104501_975
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_104501_975:
+2025-06-14 22:19:33,356 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {'35': 5, '39': 1, '44': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First ask price: 35 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_104693_930
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_104693_930:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'2': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 2 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {'4': 2, '5': 4, '7': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First ask price: 4 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_104873_945
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_104873_945:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'36': 3, '47': 2, '49': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 36 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {'62': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First ask price: 62 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO - New instrument discovered: $GARR_put_105078_960
+2025-06-14 22:19:33,356 - INFO - Raw orderbook for $GARR_put_105078_960:
+2025-06-14 22:19:33,356 - INFO -   Bids: {'67': 1, '116': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First bid price: 67 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,356 - INFO -   Asks: {'395': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,356 - INFO -   First ask price: 395 (type: <class 'str'>)
+2025-06-14 22:19:33,356 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $GARR_put_105556_975
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $GARR_put_105556_975:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'296': 1, '352': 4, '370': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 296 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO -   Asks: {'374': 2, '401': 4, '437': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First ask price: 374 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $GARR_put_105739_930
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $GARR_put_105739_930:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'229': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 229 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO -   Asks: {'285': 1, '290': 1, '330': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First ask price: 285 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $GARR_put_105922_945
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $GARR_put_105922_945:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'550': 3, '568': 2, '572': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 550 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO -   Asks: {'618': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First ask price: 618 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $GARR_put_106128_960
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $GARR_put_106128_960:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'730': 1, '737': 1, '754': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 730 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO -   Asks: {'802': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First ask price: 802 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $GARR_put_106612_975
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $GARR_put_106612_975:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'1153': 3, '1204': 3, '1318': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 1153 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $GARR_put_106786_930
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $GARR_put_106786_930:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'1135': 3, '1284': 5, '1292': 7} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 1135 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO -   Asks: {'1434': 5, '1787': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First ask price: 1434 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $GARR_put_106970_945
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $GARR_put_106970_945:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'1168': 4, '1325': 3, '1869': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 1168 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $GARR_put_107179_960
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $GARR_put_107179_960:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'1318': 4, '1558': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 1318 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO -   Asks: {'1756': 4, '1812': 3, '1842': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First ask price: 1756 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $GARR_put_107668_975
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $GARR_put_107668_975:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'2350': 2, '2353': 1, '2417': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 2350 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO -   Asks: {'2499': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First ask price: 2499 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First ask quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $HEST_call_102839_960
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $HEST_call_102839_960:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'1640': 1, '2081': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 1640 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO -   Asks: {'2192': 11, '2231': 4, '2366': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First ask price: 2192 (type: <class 'str'>)
+2025-06-14 22:19:33,357 - INFO -   First ask quantity: 11 (type: <class 'int'>)
+2025-06-14 22:19:33,357 - INFO - New instrument discovered: $HEST_call_102911_975
+2025-06-14 22:19:33,357 - INFO - Raw orderbook for $HEST_call_102911_975:
+2025-06-14 22:19:33,357 - INFO -   Bids: {'2195': 3, '2429': 1, '2547': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,357 - INFO -   First bid price: 2195 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_102938_930
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_102938_930:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'1710': 1, '1799': 1, '1888': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 1710 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'1978': 1, '2071': 2, '2201': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 1978 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_103004_945
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_103004_945:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'1901': 4, '2017': 3, '2020': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 1901 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'2256': 4, '2338': 2, '2413': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 2256 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_103888_960
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_103888_960:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'1488': 2, '1728': 3, '1759': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 1488 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_103962_975
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_103962_975:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'1229': 2, '1328': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 1229 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'1477': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 1477 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_103988_930
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_103988_930:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'941': 3, '1010': 2, '1032': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 941 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'1322': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 1322 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_104055_945
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_104055_945:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'944': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 944 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'945': 2, '1288': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 945 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_104938_960
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_104938_960:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'266': 3, '278': 3, '685': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 266 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'691': 2, '753': 4, '835': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 691 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_105012_975
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_105012_975:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'257': 5, '303': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 257 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'312': 3, '766': 3, '893': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 312 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_105038_930
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_105038_930:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'54': 1, '98': 3, '118': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 54 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'452': 4, '455': 4, '537': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 452 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_105106_945
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_105106_945:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'111': 2, '117': 2, '516': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 111 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'552': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 552 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_105987_960
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_105987_960:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'27': 2, '28': 2, '29': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 27 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'310': 5, '316': 2, '329': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 310 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_106062_975
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_106062_975:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'49': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 49 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {'50': 5, '430': 5, '444': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First ask price: 50 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_106089_930
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_106089_930:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'73': 2, '94': 4, '98': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO -   First bid price: 73 (type: <class 'str'>)
+2025-06-14 22:19:33,358 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,358 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,358 - INFO - New instrument discovered: $HEST_call_106157_945
+2025-06-14 22:19:33,358 - INFO - Raw orderbook for $HEST_call_106157_945:
+2025-06-14 22:19:33,358 - INFO -   Bids: {'5': 3, '6': 2, '7': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 5 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {'163': 4, '176': 5, '181': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First ask price: 163 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_call_107036_960
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_call_107036_960:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'8': 1, '9': 3, '10': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 8 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {'102': 6, '139': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First ask price: 102 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First ask quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_call_107112_975
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_call_107112_975:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'14': 7, '189': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 14 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 7 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {'195': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First ask price: 195 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_call_107139_930
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_call_107139_930:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'7': 2, '8': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 7 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {'9': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First ask price: 9 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_call_107208_945
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_call_107208_945:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'1': 3, '2': 9, '3': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {'52': 4, '53': 2, '60': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First ask price: 52 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_future_930
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_future_930:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'105401': 1, '105744': 2, '105985': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 105401 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_future_945
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_future_945:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'103999': 2, '104290': 2, '104417': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 103999 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_future_960
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_future_960:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'105043': 2, '105418': 4, '105897': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 105043 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {'106563': 1, '106728': 1, '106778': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First ask price: 106563 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_future_975
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_future_975:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'102933': 3, '104408': 5, '104478': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 102933 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {'105007': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First ask price: 105007 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_put_102839_960
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_put_102839_960:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'20': 3, '22': 3, '23': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 20 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {'166': 1, '172': 2, '207': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First ask price: 166 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_put_102911_975
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_put_102911_975:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'35': 5, '37': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 35 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO -   Asks: {'197': 4, '269': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First ask price: 197 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,359 - INFO - New instrument discovered: $HEST_put_102938_930
+2025-06-14 22:19:33,359 - INFO - Raw orderbook for $HEST_put_102938_930:
+2025-06-14 22:19:33,359 - INFO -   Bids: {'27': 6, '28': 3, '29': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,359 - INFO -   First bid price: 27 (type: <class 'str'>)
+2025-06-14 22:19:33,359 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO -   Asks: {'30': 1, '33': 5, '34': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First ask price: 30 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO - New instrument discovered: $HEST_put_103004_945
+2025-06-14 22:19:33,360 - INFO - Raw orderbook for $HEST_put_103004_945:
+2025-06-14 22:19:33,360 - INFO -   Bids: {'5': 5, '9': 4, '135': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First bid price: 5 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO -   Asks: {'143': 6, '158': 3, '160': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First ask price: 143 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First ask quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO - New instrument discovered: $HEST_put_103888_960
+2025-06-14 22:19:33,360 - INFO - Raw orderbook for $HEST_put_103888_960:
+2025-06-14 22:19:33,360 - INFO -   Bids: {'57': 9, '60': 6, '362': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First bid price: 57 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First bid quantity: 9 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO -   Asks: {'406': 2, '412': 1, '439': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First ask price: 406 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO - New instrument discovered: $HEST_put_103962_975
+2025-06-14 22:19:33,360 - INFO - Raw orderbook for $HEST_put_103962_975:
+2025-06-14 22:19:33,360 - INFO -   Bids: {'73': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First bid price: 73 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO -   Asks: {'79': 2, '95': 3, '397': 8} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First ask price: 79 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO - New instrument discovered: $HEST_put_103988_930
+2025-06-14 22:19:33,360 - INFO - Raw orderbook for $HEST_put_103988_930:
+2025-06-14 22:19:33,360 - INFO -   Bids: {'1': 4, '2': 14, '9': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO -   Asks: {'102': 3, '103': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First ask price: 102 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO - New instrument discovered: $HEST_put_104055_945
+2025-06-14 22:19:33,360 - INFO - Raw orderbook for $HEST_put_104055_945:
+2025-06-14 22:19:33,360 - INFO -   Bids: {'15': 5, '21': 3, '24': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First bid price: 15 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO -   Asks: {'247': 1, '272': 4, '304': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First ask price: 247 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO - New instrument discovered: $HEST_put_104938_960
+2025-06-14 22:19:33,360 - INFO - Raw orderbook for $HEST_put_104938_960:
+2025-06-14 22:19:33,360 - INFO -   Bids: {'168': 3, '179': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First bid price: 168 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO -   Asks: {'224': 5, '332': 3, '669': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First ask price: 224 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO - New instrument discovered: $HEST_put_105012_975
+2025-06-14 22:19:33,360 - INFO - Raw orderbook for $HEST_put_105012_975:
+2025-06-14 22:19:33,360 - INFO -   Bids: {'280': 4, '292': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First bid price: 280 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO -   Asks: {'871': 4, '948': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First ask price: 871 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO - New instrument discovered: $HEST_put_105038_930
+2025-06-14 22:19:33,360 - INFO - Raw orderbook for $HEST_put_105038_930:
+2025-06-14 22:19:33,360 - INFO -   Bids: {'367': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First bid price: 367 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO -   Asks: {'409': 3, '487': 3, '490': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First ask price: 409 (type: <class 'str'>)
+2025-06-14 22:19:33,360 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,360 - INFO - New instrument discovered: $HEST_put_105106_945
+2025-06-14 22:19:33,360 - INFO - Raw orderbook for $HEST_put_105106_945:
+2025-06-14 22:19:33,360 - INFO -   Bids: {'267': 3, '270': 1, '273': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,360 - INFO -   First bid price: 267 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {'732': 4, '733': 2, '739': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First ask price: 732 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $HEST_put_105987_960
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $HEST_put_105987_960:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'990': 2, '1003': 4, '1055': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 990 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {'1150': 1, '1370': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First ask price: 1150 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $HEST_put_106062_975
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $HEST_put_106062_975:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'1036': 3, '1134': 5, '1387': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 1036 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {'1510': 1, '1551': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First ask price: 1510 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $HEST_put_106089_930
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $HEST_put_106089_930:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'1050': 2, '1053': 3, '1094': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 1050 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {'1110': 2, '1134': 5, '1144': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First ask price: 1110 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $HEST_put_106157_945
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $HEST_put_106157_945:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'1234': 3, '1248': 1, '1316': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 1234 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $HEST_put_107036_960
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $HEST_put_107036_960:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'1648': 4, '1756': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 1648 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {'1998': 2, '2079': 4, '2265': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First ask price: 1998 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $HEST_put_107112_975
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $HEST_put_107112_975:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'2144': 2, '2258': 3, '2333': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 2144 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {'2371': 3, '2536': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First ask price: 2371 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $HEST_put_107139_930
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $HEST_put_107139_930:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'1991': 3, '2099': 7, '2125': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 1991 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {'2149': 5, '2164': 1, '2880': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First ask price: 2149 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $HEST_put_107208_945
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $HEST_put_107208_945:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'1718': 4, '1836': 4, '2258': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 1718 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $JUMP_call_100492_930
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $JUMP_call_100492_930:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'1898': 3, '2025': 1, '2268': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 1898 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {'2418': 3, '2421': 1, '2498': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First ask price: 2418 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $JUMP_call_100795_975
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $JUMP_call_100795_975:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'1819': 7, '2081': 1, '2183': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 1819 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 7 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $JUMP_call_100856_945
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $JUMP_call_100856_945:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'1901': 3, '1916': 3, '1962': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 1901 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {'2291': 2, '2297': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First ask price: 2291 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO - New instrument discovered: $JUMP_call_101182_960
+2025-06-14 22:19:33,361 - INFO - Raw orderbook for $JUMP_call_101182_960:
+2025-06-14 22:19:33,361 - INFO -   Bids: {'1345': 1, '1520': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First bid price: 1345 (type: <class 'str'>)
+2025-06-14 22:19:33,361 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,361 - INFO -   Asks: {'1601': 1, '1629': 5, '1655': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,361 - INFO -   First ask price: 1601 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_101518_930
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_101518_930:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'1074': 3, '1141': 3, '1180': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 1074 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {'1441': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First ask price: 1441 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_101823_975
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_101823_975:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'922': 5, '990': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 922 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {'1114': 3, '1127': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First ask price: 1114 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_101885_945
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_101885_945:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'668': 3, '706': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 668 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {'932': 3, '953': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First ask price: 932 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_102214_960
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_102214_960:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'708': 1, '732': 4, '761': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 708 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_102543_930
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_102543_930:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'294': 1, '358': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 294 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {'467': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First ask price: 467 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_102852_975
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_102852_975:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'336': 5, '389': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 336 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {'394': 3, '408': 3, '428': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First ask price: 394 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_102914_945
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_102914_945:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'207': 3, '234': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 207 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_103247_960
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_103247_960:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'159': 1, '160': 2, '161': 7} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 159 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {'173': 1, '175': 1, '179': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First ask price: 173 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_103568_930
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_103568_930:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'10': 2, '13': 5, '19': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 10 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_103880_975
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_103880_975:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'95': 8} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 95 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 8 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {'97': 8, '105': 5, '109': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First ask price: 97 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First ask quantity: 8 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_103943_945
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_103943_945:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'12': 3, '13': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 12 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {'15': 2, '23': 2, '36': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First ask price: 15 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_104279_960
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_104279_960:
+2025-06-14 22:19:33,362 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {'24': 5, '28': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First ask price: 24 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_104594_930
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_104594_930:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'1': 8} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,362 - INFO -   First bid quantity: 8 (type: <class 'int'>)
+2025-06-14 22:19:33,362 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,362 - INFO - New instrument discovered: $JUMP_call_104909_975
+2025-06-14 22:19:33,362 - INFO - Raw orderbook for $JUMP_call_104909_975:
+2025-06-14 22:19:33,362 - INFO -   Bids: {'7': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 7 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {'8': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First ask price: 8 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_call_104972_945
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_call_104972_945:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'4': 5, '6': 3, '11': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 4 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_call_105312_960
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_call_105312_960:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'1': 28} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 28 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_future_930
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_future_930:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'103334': 2, '103514': 1, '103713': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 103334 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {'105158': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First ask price: 105158 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_future_945
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_future_945:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'101761': 2, '102013': 2, '102249': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 101761 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_future_960
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_future_960:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'103257': 4, '103726': 3, '104376': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 103257 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {'104431': 2, '104489': 5, '104616': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First ask price: 104431 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_future_975
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_future_975:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'100722': 3, '102240': 5, '102279': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 100722 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {'102742': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First ask price: 102742 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_put_100492_930
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_put_100492_930:
+2025-06-14 22:19:33,363 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_put_100795_975
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_put_100795_975:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'8': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 8 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {'10': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First ask price: 10 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_put_100856_945
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_put_100856_945:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'1': 8} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 8 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {'2': 2, '3': 10, '4': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First ask price: 2 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_put_101182_960
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_put_101182_960:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'8': 4, '9': 6, '11': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 8 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {'12': 2, '15': 4, '16': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First ask price: 12 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_put_101518_930
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_put_101518_930:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'1': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_put_101823_975
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_put_101823_975:
+2025-06-14 22:19:33,363 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {'74': 5, '84': 1, '85': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First ask price: 74 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_put_101885_945
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_put_101885_945:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'27': 1, '32': 1, '33': 8} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 27 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {'35': 4, '43': 2, '51': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First ask price: 35 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_put_102214_960
+2025-06-14 22:19:33,363 - INFO - Raw orderbook for $JUMP_put_102214_960:
+2025-06-14 22:19:33,363 - INFO -   Bids: {'141': 1, '142': 3, '144': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First bid price: 141 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO -   Asks: {'146': 2, '209': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,363 - INFO -   First ask price: 146 (type: <class 'str'>)
+2025-06-14 22:19:33,363 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,363 - INFO - New instrument discovered: $JUMP_put_102543_930
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_102543_930:
+2025-06-14 22:19:33,364 - INFO -   Bids: {'80': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First bid price: 80 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'90': 3, '93': 3, '97': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First ask price: 90 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO - New instrument discovered: $JUMP_put_102852_975
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_102852_975:
+2025-06-14 22:19:33,364 - INFO -   Bids: {'367': 1, '419': 4, '427': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First bid price: 367 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'445': 2, '462': 4, '503': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First ask price: 445 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO - New instrument discovered: $JUMP_put_102914_945
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_102914_945:
+2025-06-14 22:19:33,364 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'370': 1, '403': 1, '420': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First ask price: 370 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO - New instrument discovered: $JUMP_put_103247_960
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_103247_960:
+2025-06-14 22:19:33,364 - INFO -   Bids: {'369': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First bid price: 369 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'532': 1, '620': 5, '677': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First ask price: 532 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO - New instrument discovered: $JUMP_put_103568_930
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_103568_930:
+2025-06-14 22:19:33,364 - INFO -   Bids: {'630': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First bid price: 630 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'769': 1, '794': 3, '877': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First ask price: 769 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO - New instrument discovered: $JUMP_put_103880_975
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_103880_975:
+2025-06-14 22:19:33,364 - INFO -   Bids: {'1121': 3, '1139': 3, '1246': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First bid price: 1121 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'1254': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First ask price: 1254 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO - New instrument discovered: $JUMP_put_103943_945
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_103943_945:
+2025-06-14 22:19:33,364 - INFO -   Bids: {'1170': 2, '1174': 2, '1177': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First bid price: 1170 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'1249': 3, '1476': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First ask price: 1249 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO - New instrument discovered: $JUMP_put_104279_960
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_104279_960:
+2025-06-14 22:19:33,364 - INFO -   Bids: {'882': 4, '929': 1, '1518': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First bid price: 882 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'1614': 1, '1799': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First ask price: 1614 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO - New instrument discovered: $JUMP_put_104594_930
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_104594_930:
+2025-06-14 22:19:33,364 - INFO -   Bids: {'1503': 4, '1709': 3, '1732': 7} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First bid price: 1503 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'1863': 5, '2207': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First ask price: 1863 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO - New instrument discovered: $JUMP_put_104909_975
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_104909_975:
+2025-06-14 22:19:33,364 - INFO -   Bids: {'2194': 3, '2212': 2, '2268': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First bid price: 2194 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'2389': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First ask price: 2389 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First ask quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO - New instrument discovered: $JUMP_put_104972_945
+2025-06-14 22:19:33,364 - INFO - Raw orderbook for $JUMP_put_104972_945:
+2025-06-14 22:19:33,364 - INFO -   Bids: {'1689': 4, '1796': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,364 - INFO -   First bid price: 1689 (type: <class 'str'>)
+2025-06-14 22:19:33,364 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,364 - INFO -   Asks: {'2385': 3, '2467': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First ask price: 2385 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO - New instrument discovered: $JUMP_put_105312_960
+2025-06-14 22:19:33,365 - INFO - Raw orderbook for $JUMP_put_105312_960:
+2025-06-14 22:19:33,365 - INFO -   Bids: {'1795': 6, '1930': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First bid price: 1795 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO -   Asks: {'2289': 2, '2557': 4, '2652': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First ask price: 2289 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO - New instrument discovered: $LOGN_call_100272_960
+2025-06-14 22:19:33,365 - INFO - Raw orderbook for $LOGN_call_100272_960:
+2025-06-14 22:19:33,365 - INFO -   Bids: {'1': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO -   Asks: {'3': 7} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First ask price: 3 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First ask quantity: 7 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO - New instrument discovered: $LOGN_call_100686_930
+2025-06-14 22:19:33,365 - INFO - Raw orderbook for $LOGN_call_100686_930:
+2025-06-14 22:19:33,365 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO - New instrument discovered: $LOGN_call_95856_945
+2025-06-14 22:19:33,365 - INFO - Raw orderbook for $LOGN_call_95856_945:
+2025-06-14 22:19:33,365 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   Asks: {'1840': 1, '1973': 3, '2109': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First ask price: 1840 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO - New instrument discovered: $LOGN_call_95897_975
+2025-06-14 22:19:33,365 - INFO - Raw orderbook for $LOGN_call_95897_975:
+2025-06-14 22:19:33,365 - INFO -   Bids: {'2059': 6, '2077': 2, '2180': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First bid price: 2059 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO - New instrument discovered: $LOGN_call_96340_960
+2025-06-14 22:19:33,365 - INFO - Raw orderbook for $LOGN_call_96340_960:
+2025-06-14 22:19:33,365 - INFO -   Bids: {'1216': 2, '1220': 2, '1589': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First bid price: 1216 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO -   Asks: {'1645': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First ask price: 1645 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO - New instrument discovered: $LOGN_call_96738_930
+2025-06-14 22:19:33,365 - INFO - Raw orderbook for $LOGN_call_96738_930:
+2025-06-14 22:19:33,365 - INFO -   Bids: {'1261': 1, '1285': 1, '1354': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First bid price: 1261 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO -   Asks: {'1384': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First ask price: 1384 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO - New instrument discovered: $LOGN_call_96835_945
+2025-06-14 22:19:33,365 - INFO - Raw orderbook for $LOGN_call_96835_945:
+2025-06-14 22:19:33,365 - INFO -   Bids: {'1022': 6, '1091': 4, '1112': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First bid price: 1022 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO -   Asks: {'1192': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First ask price: 1192 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO - New instrument discovered: $LOGN_call_96876_975
+2025-06-14 22:19:33,365 - INFO - Raw orderbook for $LOGN_call_96876_975:
+2025-06-14 22:19:33,365 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   Asks: {'1306': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,365 - INFO -   First ask price: 1306 (type: <class 'str'>)
+2025-06-14 22:19:33,365 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,365 - INFO - New instrument discovered: $LOGN_call_97323_960
+2025-06-14 22:19:33,365 - INFO - Raw orderbook for $LOGN_call_97323_960:
+2025-06-14 22:19:33,366 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'629': 3, '973': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 629 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_97725_930
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_97725_930:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'314': 3, '467': 5, '471': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 314 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_97813_945
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_97813_945:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'388': 3, '404': 5, '416': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 388 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'445': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 445 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_97854_975
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_97854_975:
+2025-06-14 22:19:33,366 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'351': 1, '396': 3, '442': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 351 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_98306_960
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_98306_960:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'163': 3, '168': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 163 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'194': 1, '299': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 194 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_98712_930
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_98712_930:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'8': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 8 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'13': 2, '14': 3, '16': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 13 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_98791_945
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_98791_945:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'31': 3, '33': 2, '38': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 31 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'62': 10} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 62 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 10 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_98833_975
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_98833_975:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'80': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 80 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'82': 4, '84': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 82 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_99289_960
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_99289_960:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'17': 6, '18': 4, '19': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 17 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_99699_930
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_99699_930:
+2025-06-14 22:19:33,366 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'2': 8} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 2 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 8 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_99769_945
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_99769_945:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'1': 28, '2': 7} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 28 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_call_99811_975
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_call_99811_975:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'9': 13} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 9 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 13 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_future_930
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_future_930:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'97481': 3, '98064': 5, '98796': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 97481 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'98907': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 98907 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_future_945
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_future_945:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'96386': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 96386 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'96424': 2, '98394': 2, '98890': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 96424 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_future_960
+2025-06-14 22:19:33,366 - INFO - Raw orderbook for $LOGN_future_960:
+2025-06-14 22:19:33,366 - INFO -   Bids: {'96571': 4, '97836': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First bid price: 96571 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO -   Asks: {'98334': 3, '98372': 4, '98750': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,366 - INFO -   First ask price: 98334 (type: <class 'str'>)
+2025-06-14 22:19:33,366 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,366 - INFO - New instrument discovered: $LOGN_future_975
+2025-06-14 22:19:33,367 - INFO - Raw orderbook for $LOGN_future_975:
+2025-06-14 22:19:33,367 - INFO -   Bids: {'97633': 4, '98216': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First bid price: 97633 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO -   Asks: {'99120': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First ask price: 99120 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO - New instrument discovered: $LOGN_put_100272_960
+2025-06-14 22:19:33,367 - INFO - Raw orderbook for $LOGN_put_100272_960:
+2025-06-14 22:19:33,367 - INFO -   Bids: {'1777': 1, '1954': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First bid price: 1777 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO -   Asks: {'2397': 3, '2462': 1, '2580': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First ask price: 2397 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO - New instrument discovered: $LOGN_put_100686_930
+2025-06-14 22:19:33,367 - INFO - Raw orderbook for $LOGN_put_100686_930:
+2025-06-14 22:19:33,367 - INFO -   Bids: {'2309': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First bid price: 2309 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO -   Asks: {'2619': 5, '2668': 2, '2694': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First ask price: 2619 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO - New instrument discovered: $LOGN_put_95856_945
+2025-06-14 22:19:33,367 - INFO - Raw orderbook for $LOGN_put_95856_945:
+2025-06-14 22:19:33,367 - INFO -   Bids: {'1': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO - New instrument discovered: $LOGN_put_95897_975
+2025-06-14 22:19:33,367 - INFO - Raw orderbook for $LOGN_put_95897_975:
+2025-06-14 22:19:33,367 - INFO -   Bids: {'5': 2, '6': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First bid price: 5 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO -   Asks: {'7': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First ask price: 7 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO - New instrument discovered: $LOGN_put_96340_960
+2025-06-14 22:19:33,367 - INFO - Raw orderbook for $LOGN_put_96340_960:
+2025-06-14 22:19:33,367 - INFO -   Bids: {'8': 1, '9': 8, '10': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First bid price: 8 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO -   Asks: {'11': 1, '14': 2, '16': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First ask price: 11 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO - New instrument discovered: $LOGN_put_96738_930
+2025-06-14 22:19:33,367 - INFO - Raw orderbook for $LOGN_put_96738_930:
+2025-06-14 22:19:33,367 - INFO -   Bids: {'1': 15, '2': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First bid quantity: 15 (type: <class 'int'>)
+2025-06-14 22:19:33,367 - INFO -   Asks: {'4': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,367 - INFO -   First ask price: 4 (type: <class 'str'>)
+2025-06-14 22:19:33,367 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,394 - INFO - New instrument discovered: $LOGN_put_96835_945
+2025-06-14 22:19:33,394 - INFO - Raw orderbook for $LOGN_put_96835_945:
+2025-06-14 22:19:33,394 - INFO -   Bids: {'8': 1, '9': 8, '15': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,394 - INFO -   First bid price: 8 (type: <class 'str'>)
+2025-06-14 22:19:33,395 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,395 - INFO -   Asks: {'19': 3, '20': 9, '26': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,395 - INFO -   First ask price: 19 (type: <class 'str'>)
+2025-06-14 22:19:33,395 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,395 - INFO - New instrument discovered: $LOGN_put_96876_975
+2025-06-14 22:19:33,395 - INFO - Raw orderbook for $LOGN_put_96876_975:
+2025-06-14 22:19:33,395 - INFO -   Bids: {'53': 3, '56': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,395 - INFO -   First bid price: 53 (type: <class 'str'>)
+2025-06-14 22:19:33,395 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,395 - INFO -   Asks: {'73': 3, '76': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,395 - INFO -   First ask price: 73 (type: <class 'str'>)
+2025-06-14 22:19:33,395 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,395 - INFO - New instrument discovered: $LOGN_put_97323_960
+2025-06-14 22:19:33,395 - INFO - Raw orderbook for $LOGN_put_97323_960:
+2025-06-14 22:19:33,395 - INFO -   Bids: {'87': 2, '110': 3, '121': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,395 - INFO -   First bid price: 87 (type: <class 'str'>)
+2025-06-14 22:19:33,395 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,395 - INFO -   Asks: {'145': 5, '148': 2, '153': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,395 - INFO -   First ask price: 145 (type: <class 'str'>)
+2025-06-14 22:19:33,395 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,395 - INFO - New instrument discovered: $LOGN_put_97725_930
+2025-06-14 22:19:33,395 - INFO - Raw orderbook for $LOGN_put_97725_930:
+2025-06-14 22:19:33,395 - INFO -   Bids: {'92': 1, '98': 2, '102': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,396 - INFO -   First bid price: 92 (type: <class 'str'>)
+2025-06-14 22:19:33,396 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,396 - INFO -   Asks: {'112': 2, '113': 5, '122': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,396 - INFO -   First ask price: 112 (type: <class 'str'>)
+2025-06-14 22:19:33,396 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,396 - INFO - New instrument discovered: $LOGN_put_97813_945
+2025-06-14 22:19:33,396 - INFO - Raw orderbook for $LOGN_put_97813_945:
+2025-06-14 22:19:33,396 - INFO -   Bids: {'154': 2, '184': 5, '185': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,396 - INFO -   First bid price: 154 (type: <class 'str'>)
+2025-06-14 22:19:33,396 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,396 - INFO -   Asks: {'211': 2, '228': 1, '235': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,396 - INFO -   First ask price: 211 (type: <class 'str'>)
+2025-06-14 22:19:33,396 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,397 - INFO - New instrument discovered: $LOGN_put_97854_975
+2025-06-14 22:19:33,397 - INFO - Raw orderbook for $LOGN_put_97854_975:
+2025-06-14 22:19:33,397 - INFO -   Bids: {'420': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,397 - INFO -   First bid price: 420 (type: <class 'str'>)
+2025-06-14 22:19:33,397 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,397 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,397 - INFO - New instrument discovered: $LOGN_put_98306_960
+2025-06-14 22:19:33,397 - INFO - Raw orderbook for $LOGN_put_98306_960:
+2025-06-14 22:19:33,397 - INFO -   Bids: {'353': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,397 - INFO -   First bid price: 353 (type: <class 'str'>)
+2025-06-14 22:19:33,397 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,397 - INFO -   Asks: {'434': 5, '453': 6, '528': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,397 - INFO -   First ask price: 434 (type: <class 'str'>)
+2025-06-14 22:19:33,397 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,397 - INFO - New instrument discovered: $LOGN_put_98712_930
+2025-06-14 22:19:33,397 - INFO - Raw orderbook for $LOGN_put_98712_930:
+2025-06-14 22:19:33,397 - INFO -   Bids: {'592': 1, '658': 4, '673': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,397 - INFO -   First bid price: 592 (type: <class 'str'>)
+2025-06-14 22:19:33,397 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,397 - INFO -   Asks: {'737': 2, '803': 4, '847': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,397 - INFO -   First ask price: 737 (type: <class 'str'>)
+2025-06-14 22:19:33,397 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,397 - INFO - New instrument discovered: $LOGN_put_98791_945
+2025-06-14 22:19:33,397 - INFO - Raw orderbook for $LOGN_put_98791_945:
+2025-06-14 22:19:33,397 - INFO -   Bids: {'789': 6, '798': 1, '809': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,397 - INFO -   First bid price: 789 (type: <class 'str'>)
+2025-06-14 22:19:33,397 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,397 - INFO -   Asks: {'838': 1, '965': 2, '998': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,397 - INFO -   First ask price: 838 (type: <class 'str'>)
+2025-06-14 22:19:33,397 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,397 - INFO - New instrument discovered: $LOGN_put_98833_975
+2025-06-14 22:19:33,398 - INFO - Raw orderbook for $LOGN_put_98833_975:
+2025-06-14 22:19:33,398 - INFO -   Bids: {'1019': 4, '1137': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,398 - INFO -   First bid price: 1019 (type: <class 'str'>)
+2025-06-14 22:19:33,398 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,398 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,398 - INFO - New instrument discovered: $LOGN_put_99289_960
+2025-06-14 22:19:33,398 - INFO - Raw orderbook for $LOGN_put_99289_960:
+2025-06-14 22:19:33,398 - INFO -   Bids: {'1272': 5, '1287': 1, '1290': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,398 - INFO -   First bid price: 1272 (type: <class 'str'>)
+2025-06-14 22:19:33,398 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,398 - INFO -   Asks: {'1383': 1, '1480': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,398 - INFO -   First ask price: 1383 (type: <class 'str'>)
+2025-06-14 22:19:33,398 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,398 - INFO - New instrument discovered: $LOGN_put_99699_930
+2025-06-14 22:19:33,398 - INFO - Raw orderbook for $LOGN_put_99699_930:
+2025-06-14 22:19:33,398 - INFO -   Bids: {'1703': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,398 - INFO -   First bid price: 1703 (type: <class 'str'>)
+2025-06-14 22:19:33,398 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,398 - INFO -   Asks: {'1757': 6, '1902': 4, '1919': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,398 - INFO -   First ask price: 1757 (type: <class 'str'>)
+2025-06-14 22:19:33,398 - INFO -   First ask quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,398 - INFO - New instrument discovered: $LOGN_put_99769_945
+2025-06-14 22:19:33,398 - INFO - Raw orderbook for $LOGN_put_99769_945:
+2025-06-14 22:19:33,398 - INFO -   Bids: {'1677': 1, '1720': 1, '1831': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,398 - INFO -   First bid price: 1677 (type: <class 'str'>)
+2025-06-14 22:19:33,398 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,398 - INFO -   Asks: {'1938': 3, '1955': 4, '1997': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,399 - INFO -   First ask price: 1938 (type: <class 'str'>)
+2025-06-14 22:19:33,399 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,399 - INFO - New instrument discovered: $LOGN_put_99811_975
+2025-06-14 22:19:33,399 - INFO - Raw orderbook for $LOGN_put_99811_975:
+2025-06-14 22:19:33,399 - INFO -   Bids: {'1389': 2, '1646': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,399 - INFO -   First bid price: 1389 (type: <class 'str'>)
+2025-06-14 22:19:33,399 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,399 - INFO -   Asks: {'2084': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,399 - INFO -   First ask price: 2084 (type: <class 'str'>)
+2025-06-14 22:19:33,399 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,399 - INFO - New instrument discovered: $SIMP_call_100173_945
+2025-06-14 22:19:33,399 - INFO - Raw orderbook for $SIMP_call_100173_945:
+2025-06-14 22:19:33,399 - INFO -   Bids: {'1': 2, '2': 5, '3': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,399 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,399 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,399 - INFO -   Asks: {'4': 2, '5': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,399 - INFO -   First ask price: 4 (type: <class 'str'>)
+2025-06-14 22:19:33,399 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,399 - INFO - New instrument discovered: $SIMP_call_100432_975
+2025-06-14 22:19:33,399 - INFO - Raw orderbook for $SIMP_call_100432_975:
+2025-06-14 22:19:33,399 - INFO -   Bids: {'13': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,399 - INFO -   First bid price: 13 (type: <class 'str'>)
+2025-06-14 22:19:33,399 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,399 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO - New instrument discovered: $SIMP_call_100562_930
+2025-06-14 22:19:33,400 - INFO - Raw orderbook for $SIMP_call_100562_930:
+2025-06-14 22:19:33,400 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO - New instrument discovered: $SIMP_call_100562_960
+2025-06-14 22:19:33,400 - INFO - Raw orderbook for $SIMP_call_100562_960:
+2025-06-14 22:19:33,400 - INFO -   Bids: {'1': 16, '2': 20} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,400 - INFO -   First bid quantity: 16 (type: <class 'int'>)
+2025-06-14 22:19:33,400 - INFO -   Asks: {'5': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO -   First ask price: 5 (type: <class 'str'>)
+2025-06-14 22:19:33,400 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,400 - INFO - New instrument discovered: $SIMP_call_96245_945
+2025-06-14 22:19:33,400 - INFO - Raw orderbook for $SIMP_call_96245_945:
+2025-06-14 22:19:33,400 - INFO -   Bids: {'1992': 2, '2103': 3, '2119': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO -   First bid price: 1992 (type: <class 'str'>)
+2025-06-14 22:19:33,400 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,400 - INFO -   Asks: {'2477': 5, '2706': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO -   First ask price: 2477 (type: <class 'str'>)
+2025-06-14 22:19:33,400 - INFO -   First ask quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,400 - INFO - New instrument discovered: $SIMP_call_96493_975
+2025-06-14 22:19:33,400 - INFO - Raw orderbook for $SIMP_call_96493_975:
+2025-06-14 22:19:33,400 - INFO -   Bids: {'1990': 1, '2024': 3, '2087': 6} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO -   First bid price: 1990 (type: <class 'str'>)
+2025-06-14 22:19:33,400 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,400 - INFO -   Asks: {'2198': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO -   First ask price: 2198 (type: <class 'str'>)
+2025-06-14 22:19:33,400 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,400 - INFO - New instrument discovered: $SIMP_call_96618_930
+2025-06-14 22:19:33,400 - INFO - Raw orderbook for $SIMP_call_96618_930:
+2025-06-14 22:19:33,400 - INFO -   Bids: {'1531': 2, '1538': 4, '1703': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO -   First bid price: 1531 (type: <class 'str'>)
+2025-06-14 22:19:33,400 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,400 - INFO -   Asks: {'1874': 2, '2010': 4, '2225': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,400 - INFO -   First ask price: 1874 (type: <class 'str'>)
+2025-06-14 22:19:33,400 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,400 - INFO - New instrument discovered: $SIMP_call_96618_960
+2025-06-14 22:19:33,400 - INFO - Raw orderbook for $SIMP_call_96618_960:
+2025-06-14 22:19:33,400 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,401 - INFO -   Asks: {'1741': 3, '1840': 1, '1970': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,401 - INFO -   First ask price: 1741 (type: <class 'str'>)
+2025-06-14 22:19:33,401 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,401 - INFO - New instrument discovered: $SIMP_call_97227_945
+2025-06-14 22:19:33,401 - INFO - Raw orderbook for $SIMP_call_97227_945:
+2025-06-14 22:19:33,401 - INFO -   Bids: {'756': 3, '875': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,401 - INFO -   First bid price: 756 (type: <class 'str'>)
+2025-06-14 22:19:33,401 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,401 - INFO -   Asks: {'1303': 4, '1311': 1, '1347': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,401 - INFO -   First ask price: 1303 (type: <class 'str'>)
+2025-06-14 22:19:33,401 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,401 - INFO - New instrument discovered: $SIMP_call_97478_975
+2025-06-14 22:19:33,401 - INFO - Raw orderbook for $SIMP_call_97478_975:
+2025-06-14 22:19:33,401 - INFO -   Bids: {'943': 6, '1093': 3, '1127': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,401 - INFO -   First bid price: 943 (type: <class 'str'>)
+2025-06-14 22:19:33,401 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,401 - INFO -   Asks: {'1186': 3, '1190': 2, '1254': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,401 - INFO -   First ask price: 1186 (type: <class 'str'>)
+2025-06-14 22:19:33,401 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,401 - INFO - New instrument discovered: $SIMP_call_97604_930
+2025-06-14 22:19:33,401 - INFO - Raw orderbook for $SIMP_call_97604_930:
+2025-06-14 22:19:33,402 - INFO -   Bids: {'598': 3, '599': 3, '681': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,402 - INFO -   First bid price: 598 (type: <class 'str'>)
+2025-06-14 22:19:33,402 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,402 - INFO -   Asks: {'1016': 3, '1270': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,402 - INFO -   First ask price: 1016 (type: <class 'str'>)
+2025-06-14 22:19:33,402 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,402 - INFO - New instrument discovered: $SIMP_call_97604_960
+2025-06-14 22:19:33,402 - INFO - Raw orderbook for $SIMP_call_97604_960:
+2025-06-14 22:19:33,402 - INFO -   Bids: {'932': 2, '1024': 4, '1102': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,402 - INFO -   First bid price: 932 (type: <class 'str'>)
+2025-06-14 22:19:33,402 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,402 - INFO -   Asks: {'1275': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,402 - INFO -   First ask price: 1275 (type: <class 'str'>)
+2025-06-14 22:19:33,402 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,402 - INFO - New instrument discovered: $SIMP_call_98209_945
+2025-06-14 22:19:33,402 - INFO - Raw orderbook for $SIMP_call_98209_945:
+2025-06-14 22:19:33,402 - INFO -   Bids: {'345': 1, '389': 1, '452': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,402 - INFO -   First bid price: 345 (type: <class 'str'>)
+2025-06-14 22:19:33,402 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,402 - INFO -   Asks: {'515': 2, '589': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,402 - INFO -   First ask price: 515 (type: <class 'str'>)
+2025-06-14 22:19:33,402 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,402 - INFO - New instrument discovered: $SIMP_call_98463_975
+2025-06-14 22:19:33,402 - INFO - Raw orderbook for $SIMP_call_98463_975:
+2025-06-14 22:19:33,402 - INFO -   Bids: {'397': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,403 - INFO -   First bid price: 397 (type: <class 'str'>)
+2025-06-14 22:19:33,403 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,403 - INFO -   Asks: {'571': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,403 - INFO -   First ask price: 571 (type: <class 'str'>)
+2025-06-14 22:19:33,403 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,403 - INFO - New instrument discovered: $SIMP_call_98590_930
+2025-06-14 22:19:33,403 - INFO - Raw orderbook for $SIMP_call_98590_930:
+2025-06-14 22:19:33,403 - INFO -   Bids: {'73': 4, '138': 5, '140': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,403 - INFO -   First bid price: 73 (type: <class 'str'>)
+2025-06-14 22:19:33,403 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,403 - INFO -   Asks: {'169': 1, '228': 1, '274': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,403 - INFO -   First ask price: 169 (type: <class 'str'>)
+2025-06-14 22:19:33,403 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,403 - INFO - New instrument discovered: $SIMP_call_98590_960
+2025-06-14 22:19:33,403 - INFO - Raw orderbook for $SIMP_call_98590_960:
+2025-06-14 22:19:33,403 - INFO -   Bids: {'179': 7} (type: <class 'dict'>)
+2025-06-14 22:19:33,403 - INFO -   First bid price: 179 (type: <class 'str'>)
+2025-06-14 22:19:33,403 - INFO -   First bid quantity: 7 (type: <class 'int'>)
+2025-06-14 22:19:33,403 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,403 - INFO - New instrument discovered: $SIMP_call_99191_945
+2025-06-14 22:19:33,403 - INFO - Raw orderbook for $SIMP_call_99191_945:
+2025-06-14 22:19:33,403 - INFO -   Bids: {'21': 3, '22': 2, '27': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,403 - INFO -   First bid price: 21 (type: <class 'str'>)
+2025-06-14 22:19:33,403 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,403 - INFO -   Asks: {'73': 1, '87': 4, '90': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,403 - INFO -   First ask price: 73 (type: <class 'str'>)
+2025-06-14 22:19:33,403 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,403 - INFO - New instrument discovered: $SIMP_call_99447_975
+2025-06-14 22:19:33,403 - INFO - Raw orderbook for $SIMP_call_99447_975:
+2025-06-14 22:19:33,403 - INFO -   Bids: {'79': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,403 - INFO -   First bid price: 79 (type: <class 'str'>)
+2025-06-14 22:19:33,404 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,404 - INFO -   Asks: {'91': 3, '118': 8} (type: <class 'dict'>)
+2025-06-14 22:19:33,404 - INFO -   First ask price: 91 (type: <class 'str'>)
+2025-06-14 22:19:33,404 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,404 - INFO - New instrument discovered: $SIMP_call_99576_930
+2025-06-14 22:19:33,404 - INFO - Raw orderbook for $SIMP_call_99576_930:
+2025-06-14 22:19:33,404 - INFO -   Bids: {'1': 12, '2': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,404 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,404 - INFO -   First bid quantity: 12 (type: <class 'int'>)
+2025-06-14 22:19:33,404 - INFO -   Asks: {'3': 1, '5': 4, '7': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,404 - INFO -   First ask price: 3 (type: <class 'str'>)
+2025-06-14 22:19:33,404 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,404 - INFO - New instrument discovered: $SIMP_call_99576_960
+2025-06-14 22:19:33,404 - INFO - Raw orderbook for $SIMP_call_99576_960:
+2025-06-14 22:19:33,404 - INFO -   Bids: {'28': 4, '31': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,404 - INFO -   First bid price: 28 (type: <class 'str'>)
+2025-06-14 22:19:33,404 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,404 - INFO -   Asks: {'55': 1, '70': 7, '74': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,404 - INFO -   First ask price: 55 (type: <class 'str'>)
+2025-06-14 22:19:33,404 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,404 - INFO - New instrument discovered: $SIMP_future_930
+2025-06-14 22:19:33,404 - INFO - Raw orderbook for $SIMP_future_930:
+2025-06-14 22:19:33,404 - INFO -   Bids: {'98839': 1, '98891': 1, '98926': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,404 - INFO -   First bid price: 98839 (type: <class 'str'>)
+2025-06-14 22:19:33,404 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,404 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,404 - INFO - New instrument discovered: $SIMP_future_945
+2025-06-14 22:19:33,404 - INFO - Raw orderbook for $SIMP_future_945:
+2025-06-14 22:19:33,404 - INFO -   Bids: {'97756': 2, '97875': 1, '98037': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,404 - INFO -   First bid price: 97756 (type: <class 'str'>)
+2025-06-14 22:19:33,404 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,404 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,404 - INFO - New instrument discovered: $SIMP_future_960
+2025-06-14 22:19:33,404 - INFO - Raw orderbook for $SIMP_future_960:
+2025-06-14 22:19:33,404 - INFO -   Bids: {'98469': 5, '98854': 4, '99302': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,405 - INFO -   First bid price: 98469 (type: <class 'str'>)
+2025-06-14 22:19:33,405 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,405 - INFO -   Asks: {'99921': 1, '99991': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,405 - INFO -   First ask price: 99921 (type: <class 'str'>)
+2025-06-14 22:19:33,405 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,405 - INFO - New instrument discovered: $SIMP_future_975
+2025-06-14 22:19:33,405 - INFO - Raw orderbook for $SIMP_future_975:
+2025-06-14 22:19:33,405 - INFO -   Bids: {'96764': 3, '97923': 3, '98018': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,405 - INFO -   First bid price: 96764 (type: <class 'str'>)
+2025-06-14 22:19:33,405 - INFO -   First bid quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,405 - INFO -   Asks: {'98847': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,405 - INFO -   First ask price: 98847 (type: <class 'str'>)
+2025-06-14 22:19:33,405 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,405 - INFO - New instrument discovered: $SIMP_put_100173_945
+2025-06-14 22:19:33,406 - INFO - Raw orderbook for $SIMP_put_100173_945:
+2025-06-14 22:19:33,406 - INFO -   Bids: {'1566': 2, '1653': 3, '1672': 5} (type: <class 'dict'>)
+2025-06-14 22:19:33,406 - INFO -   First bid price: 1566 (type: <class 'str'>)
+2025-06-14 22:19:33,406 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,406 - INFO -   Asks: {'2044': 2, '2109': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,406 - INFO -   First ask price: 2044 (type: <class 'str'>)
+2025-06-14 22:19:33,406 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,406 - INFO - New instrument discovered: $SIMP_put_100432_975
+2025-06-14 22:19:33,406 - INFO - Raw orderbook for $SIMP_put_100432_975:
+2025-06-14 22:19:33,406 - INFO -   Bids: {'1648': 2, '1874': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,406 - INFO -   First bid price: 1648 (type: <class 'str'>)
+2025-06-14 22:19:33,406 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,406 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,406 - INFO - New instrument discovered: $SIMP_put_100562_930
+2025-06-14 22:19:33,406 - INFO - Raw orderbook for $SIMP_put_100562_930:
+2025-06-14 22:19:33,406 - INFO -   Bids: {'1388': 4, '1840': 4, '1951': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,406 - INFO -   First bid price: 1388 (type: <class 'str'>)
+2025-06-14 22:19:33,406 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,406 - INFO -   Asks: {'2653': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,406 - INFO -   First ask price: 2653 (type: <class 'str'>)
+2025-06-14 22:19:33,406 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,406 - INFO - New instrument discovered: $SIMP_put_100562_960
+2025-06-14 22:19:33,406 - INFO - Raw orderbook for $SIMP_put_100562_960:
+2025-06-14 22:19:33,407 - INFO -   Bids: {'1401': 4, '1563': 6, '1874': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,407 - INFO -   First bid price: 1401 (type: <class 'str'>)
+2025-06-14 22:19:33,407 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,407 - INFO -   Asks: {'1925': 3, '1948': 2, '2048': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,407 - INFO -   First ask price: 1925 (type: <class 'str'>)
+2025-06-14 22:19:33,407 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,407 - INFO - New instrument discovered: $SIMP_put_96245_945
+2025-06-14 22:19:33,407 - INFO - Raw orderbook for $SIMP_put_96245_945:
+2025-06-14 22:19:33,407 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,407 - INFO -   Asks: {'1': 10} (type: <class 'dict'>)
+2025-06-14 22:19:33,407 - INFO -   First ask price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,407 - INFO -   First ask quantity: 10 (type: <class 'int'>)
+2025-06-14 22:19:33,407 - INFO - New instrument discovered: $SIMP_put_96493_975
+2025-06-14 22:19:33,407 - INFO - Raw orderbook for $SIMP_put_96493_975:
+2025-06-14 22:19:33,407 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,407 - INFO -   Asks: {'1': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,407 - INFO -   First ask price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,407 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,407 - INFO - New instrument discovered: $SIMP_put_96618_930
+2025-06-14 22:19:33,407 - INFO - Raw orderbook for $SIMP_put_96618_930:
+2025-06-14 22:19:33,407 - INFO -   Bids: {'1': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,407 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,407 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,407 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,407 - INFO - New instrument discovered: $SIMP_put_96618_960
+2025-06-14 22:19:33,407 - INFO - Raw orderbook for $SIMP_put_96618_960:
+2025-06-14 22:19:33,407 - INFO -   Bids: {'2': 4, '3': 4, '4': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,407 - INFO -   First bid price: 2 (type: <class 'str'>)
+2025-06-14 22:19:33,408 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,408 - INFO -   Asks: {'7': 4, '10': 3, '16': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,408 - INFO -   First ask price: 7 (type: <class 'str'>)
+2025-06-14 22:19:33,408 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,408 - INFO - New instrument discovered: $SIMP_put_97227_945
+2025-06-14 22:19:33,408 - INFO - Raw orderbook for $SIMP_put_97227_945:
+2025-06-14 22:19:33,408 - INFO -   Bids: {'1': 6, '2': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,408 - INFO -   First bid price: 1 (type: <class 'str'>)
+2025-06-14 22:19:33,408 - INFO -   First bid quantity: 6 (type: <class 'int'>)
+2025-06-14 22:19:33,408 - INFO -   Asks: {'3': 4, '18': 2, '19': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,408 - INFO -   First ask price: 3 (type: <class 'str'>)
+2025-06-14 22:19:33,408 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,408 - INFO - New instrument discovered: $SIMP_put_97478_975
+2025-06-14 22:19:33,408 - INFO - Raw orderbook for $SIMP_put_97478_975:
+2025-06-14 22:19:33,408 - INFO -   Bids: {'56': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,408 - INFO -   First bid price: 56 (type: <class 'str'>)
+2025-06-14 22:19:33,408 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,408 - INFO -   Asks: {'60': 2, '67': 8, '72': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,408 - INFO -   First ask price: 60 (type: <class 'str'>)
+2025-06-14 22:19:33,408 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,408 - INFO - New instrument discovered: $SIMP_put_97604_930
+2025-06-14 22:19:33,408 - INFO - Raw orderbook for $SIMP_put_97604_930:
+2025-06-14 22:19:33,408 - INFO -   Bids: {'3': 7} (type: <class 'dict'>)
+2025-06-14 22:19:33,408 - INFO -   First bid price: 3 (type: <class 'str'>)
+2025-06-14 22:19:33,408 - INFO -   First bid quantity: 7 (type: <class 'int'>)
+2025-06-14 22:19:33,409 - INFO -   Asks: {'18': 1, '30': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,409 - INFO -   First ask price: 18 (type: <class 'str'>)
+2025-06-14 22:19:33,409 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,409 - INFO - New instrument discovered: $SIMP_put_97604_960
+2025-06-14 22:19:33,409 - INFO - Raw orderbook for $SIMP_put_97604_960:
+2025-06-14 22:19:33,409 - INFO -   Bids: {'45': 4, '56': 4, '65': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,409 - INFO -   First bid price: 45 (type: <class 'str'>)
+2025-06-14 22:19:33,409 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,409 - INFO -   Asks: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,409 - INFO - New instrument discovered: $SIMP_put_98209_945
+2025-06-14 22:19:33,409 - INFO - Raw orderbook for $SIMP_put_98209_945:
+2025-06-14 22:19:33,409 - INFO -   Bids: {} (type: <class 'dict'>)
+2025-06-14 22:19:33,409 - INFO -   Asks: {'103': 1, '300': 2, '319': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,409 - INFO -   First ask price: 103 (type: <class 'str'>)
+2025-06-14 22:19:33,409 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,409 - INFO - New instrument discovered: $SIMP_put_98463_975
+2025-06-14 22:19:33,409 - INFO - Raw orderbook for $SIMP_put_98463_975:
+2025-06-14 22:19:33,409 - INFO -   Bids: {'229': 2, '265': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,410 - INFO -   First bid price: 229 (type: <class 'str'>)
+2025-06-14 22:19:33,410 - INFO -   First bid quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,410 - INFO -   Asks: {'312': 2, '336': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,410 - INFO -   First ask price: 312 (type: <class 'str'>)
+2025-06-14 22:19:33,410 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,410 - INFO - New instrument discovered: $SIMP_put_98590_930
+2025-06-14 22:19:33,410 - INFO - Raw orderbook for $SIMP_put_98590_930:
+2025-06-14 22:19:33,410 - INFO -   Bids: {'104': 4} (type: <class 'dict'>)
+2025-06-14 22:19:33,410 - INFO -   First bid price: 104 (type: <class 'str'>)
+2025-06-14 22:19:33,410 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,410 - INFO -   Asks: {'116': 1, '402': 1, '442': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,410 - INFO -   First ask price: 116 (type: <class 'str'>)
+2025-06-14 22:19:33,410 - INFO -   First ask quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,410 - INFO - New instrument discovered: $SIMP_put_98590_960
+2025-06-14 22:19:33,410 - INFO - Raw orderbook for $SIMP_put_98590_960:
+2025-06-14 22:19:33,410 - INFO -   Bids: {'259': 4, '304': 6, '306': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,410 - INFO -   First bid price: 259 (type: <class 'str'>)
+2025-06-14 22:19:33,410 - INFO -   First bid quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:33,410 - INFO -   Asks: {'313': 2, '405': 4, '424': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,410 - INFO -   First ask price: 313 (type: <class 'str'>)
+2025-06-14 22:19:33,410 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,410 - INFO - New instrument discovered: $SIMP_put_99191_945
+2025-06-14 22:19:33,411 - INFO - Raw orderbook for $SIMP_put_99191_945:
+2025-06-14 22:19:33,411 - INFO -   Bids: {'785': 7, '811': 1, '862': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,411 - INFO -   First bid price: 785 (type: <class 'str'>)
+2025-06-14 22:19:33,411 - INFO -   First bid quantity: 7 (type: <class 'int'>)
+2025-06-14 22:19:33,411 - INFO -   Asks: {'1207': 7} (type: <class 'dict'>)
+2025-06-14 22:19:33,411 - INFO -   First ask price: 1207 (type: <class 'str'>)
+2025-06-14 22:19:33,411 - INFO -   First ask quantity: 7 (type: <class 'int'>)
+2025-06-14 22:19:33,411 - INFO - New instrument discovered: $SIMP_put_99447_975
+2025-06-14 22:19:33,411 - INFO - Raw orderbook for $SIMP_put_99447_975:
+2025-06-14 22:19:33,411 - INFO -   Bids: {'797': 5, '826': 4, '842': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,411 - INFO -   First bid price: 797 (type: <class 'str'>)
+2025-06-14 22:19:33,411 - INFO -   First bid quantity: 5 (type: <class 'int'>)
+2025-06-14 22:19:33,411 - INFO -   Asks: {'923': 2, '1094': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,411 - INFO -   First ask price: 923 (type: <class 'str'>)
+2025-06-14 22:19:33,411 - INFO -   First ask quantity: 2 (type: <class 'int'>)
+2025-06-14 22:19:33,411 - INFO - New instrument discovered: $SIMP_put_99576_930
+2025-06-14 22:19:33,411 - INFO - Raw orderbook for $SIMP_put_99576_930:
+2025-06-14 22:19:33,411 - INFO -   Bids: {'784': 1, '949': 2, '1018': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,411 - INFO -   First bid price: 784 (type: <class 'str'>)
+2025-06-14 22:19:33,411 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,411 - INFO -   Asks: {'1085': 3, '1086': 2, '1297': 2} (type: <class 'dict'>)
+2025-06-14 22:19:33,411 - INFO -   First ask price: 1085 (type: <class 'str'>)
+2025-06-14 22:19:33,411 - INFO -   First ask quantity: 3 (type: <class 'int'>)
+2025-06-14 22:19:33,411 - INFO - New instrument discovered: $SIMP_put_99576_960
+2025-06-14 22:19:33,411 - INFO - Raw orderbook for $SIMP_put_99576_960:
+2025-06-14 22:19:33,411 - INFO -   Bids: {'898': 1, '928': 4, '979': 1} (type: <class 'dict'>)
+2025-06-14 22:19:33,411 - INFO -   First bid price: 898 (type: <class 'str'>)
+2025-06-14 22:19:33,411 - INFO -   First bid quantity: 1 (type: <class 'int'>)
+2025-06-14 22:19:33,411 - INFO -   Asks: {'987': 4, '1008': 1, '1562': 3} (type: <class 'dict'>)
+2025-06-14 22:19:33,411 - INFO -   First ask price: 987 (type: <class 'str'>)
+2025-06-14 22:19:33,411 - INFO -   First ask quantity: 4 (type: <class 'int'>)
+2025-06-14 22:19:34,109 - INFO - Connected to trading WebSocket: Connected to OrderBook API
+2025-06-14 22:19:34,109 - INFO - Waiting for market data...
+2025-06-14 22:19:34,109 - INFO - Market data available: 264 instruments
+2025-06-14 22:19:34,109 - INFO - Selected instrument: $GARR_future_960
+2025-06-14 22:19:34,109 - INFO - TestBot will trade $GARR_future_960
+2025-06-14 22:19:34,109 - INFO - Starting trading loop...
+2025-06-14 22:19:37,111 - WARNING - Trading request timeout: 0000000000
+2025-06-14 22:19:40,113 - WARNING - Trading request timeout: 0000000001
+2025-06-14 22:19:43,114 - WARNING - Trading request timeout: 0000000002
+2025-06-14 22:19:53,803 - WARNING - Trading WebSocket connection closed
+2025-06-14 22:19:53,803 - INFO - TestBot stopped
+2025-06-14 22:19:53,803 - INFO - Shutting down bot manager...
+2025-06-14 22:20:03,805 - WARNING - WebSocket connection closed
+2025-06-14 22:20:03,805 - INFO - Bot manager shutdown complete
+2025-06-14 22:23:01,548 - INFO - === STARTING ALGORITHMIC TRADING SYSTEM ===
+2025-06-14 22:23:01,548 - INFO - Initializing market data cache...
+2025-06-14 22:23:01,548 - INFO - Attempting to connect to market at ws://192.168.100.10:9001/trade?team_secret=5c440ac1-b111-405b-8c3d-a35bfe99933e
+2025-06-14 22:23:11,569 - ERROR - Failed to connect to market: timed out during opening handshake
+2025-06-14 22:23:11,570 - ERROR - Unexpected error in trading system: timed out during opening handshake
+2025-06-14 22:23:11,570 - INFO - Shutting down bot manager...
+2025-06-14 22:23:11,570 - INFO - Bot manager shutdown complete
+2025-06-14 22:29:34,622 - INFO - === STARTING ALGORITHMIC TRADING SYSTEM ===
+2025-06-14 22:29:34,622 - INFO - Initializing market data cache...
+2025-06-14 22:29:34,622 - INFO - Attempting to connect to market at ws://192.168.100.10:9001/trade?team_secret=5c440ac1-b111-405b-8c3d-a35bfe99933e
+2025-06-14 22:29:39,656 - ERROR - Failed to connect to market: [Errno 51] Connect call failed ('192.168.100.10', 9001)
+2025-06-14 22:29:39,656 - ERROR - Unexpected error in trading system: [Errno 51] Connect call failed ('192.168.100.10', 9001)
+2025-06-14 22:29:39,656 - INFO - Shutting down bot manager...
+2025-06-14 22:29:39,656 - INFO - Bot manager shutdown complete

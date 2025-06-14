@@ -180,20 +180,9 @@ class MarketDataCache:
                 self.instruments_discovered.add(instr_id)
                 logger.info(f"New instrument discovered: {instr_id}")
                 
-                # Debug: Log the raw orderbook structure for the first discovered instrument
-                logger.info(f"Raw orderbook for {instr_id}:")
-                logger.info(f"  Bids: {orderbook.bids} (type: {type(orderbook.bids)})")
-                if orderbook.bids:
-                    first_bid_price = list(orderbook.bids.keys())[0]
-                    first_bid_qty = list(orderbook.bids.values())[0]
-                    logger.info(f"  First bid price: {first_bid_price} (type: {type(first_bid_price)})")
-                    logger.info(f"  First bid quantity: {first_bid_qty} (type: {type(first_bid_qty)})")
-                logger.info(f"  Asks: {orderbook.asks} (type: {type(orderbook.asks)})")
-                if orderbook.asks:
-                    first_ask_price = list(orderbook.asks.keys())[0]
-                    first_ask_qty = list(orderbook.asks.values())[0]
-                    logger.info(f"  First ask price: {first_ask_price} (type: {type(first_ask_price)})")
-                    logger.info(f"  First ask quantity: {first_ask_qty} (type: {type(first_ask_qty)})")
+                # Only log basic info for first few instruments
+                if len(self.instruments_discovered) <= 3:
+                    logger.debug(f"Sample orderbook structure for {instr_id}: bids={len(orderbook.bids)}, asks={len(orderbook.asks)}")
             
             # Update best prices and volumes
             instrument = self.instrument_info[instr_id]
