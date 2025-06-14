@@ -391,6 +391,7 @@ class DemoTradingBot:
                 print(f"5) Final check after {max_wait_time_for_fill}s wait for sell order {sell_order_id_to_check}:")
                 print(f"   - Order still pending (based on last poll): {order_still_pending}.")
 
+
                 if sell_order_successfully_submitted and sell_order_id_to_check and order_still_pending:
                     print(f"   Sell order (ID: {sell_order_id_to_check}) still PENDING after TIMEOUT. Initiating cancellation...")
                     cancel_response = await self.cancel(instr, sell_order_id_to_check)
@@ -421,7 +422,7 @@ class DemoTradingBot:
 
 async def main():
     EXCHANGE_URI = "ws://192.168.100.10:9001/trade"
-    TEAM_SECRET = "YOUR_TEAM_SECRET"
+    TEAM_SECRET = "5c440ac1-b111-405b-8c3d-a35bfe99933e"
 
     bot = DemoTradingBot(
         EXCHANGE_URI,
