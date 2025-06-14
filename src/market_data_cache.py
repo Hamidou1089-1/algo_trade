@@ -7,7 +7,9 @@ from collections import defaultdict
 import time
 import logging
 from datetime import datetime
-
+import os 
+import json 
+from datetime import datetime 
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -143,6 +145,7 @@ class MarketDataCache:
                 user_request_id=data.get("user_request_id")
             )
             
+
             self._cache_market_data(market_data)
             self.total_updates_received += 1
             
@@ -298,6 +301,34 @@ class MarketDataCache:
         
         logger.info("=" * 30)
 
+    def ob_dict(self):
+
+
+        ob =  self.current_orderbooks.copy()
+        dict = {}
+        logger.info(f'orderbook is {ob}')
+        for key in ob.keys(): 
+            dict[key] = {}
+            dict[key]['bids'] = ob[key].bids
+            dict[key]['asks'] = ob[key].asks
+
+        return dict
+
+    def json_dump(self):
+        output_dir = os.path.join(os.path.dirname(__file__), "..", "logs", "orderbooks")
+        os.makedirs(output_dir, exist_ok=True)  
+
+        output_path = os.path.join(output_dir, f"order_dump{datetime.now()}.json")
+        ob = self.ob_dict()
+        js =  {'market_time' :self.last_market_time, 
+               'ob': ob}
+        
+        with open(output_path, "w") as f:
+            json.dump(js, f, indent=4)
+
+        #current_time = datetime.now()
+        #logger.info(f'time diff is {self.last_market_time - current_time}')
+
 async def main():
     """Example usage of MarketDataCache"""
     EXCHANGE_URI = "ws://192.168.100.10:9001/trade"
@@ -316,7 +347,9 @@ async def main():
     
     # Log market summary every 10 seconds
     while True:
-        await asyncio.sleep(10)
+        await asyncio.sleep(5)
+
+        cache.json_dump()
         cache.log_market_summary()
 
 if __name__ == '__main__':
