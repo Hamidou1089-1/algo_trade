@@ -195,7 +195,7 @@ class GameAPI:
                 # We don't process market data here - that's handled by MarketDataCache
                 msg_type = data.get("type")
                 if msg_type == "market_data_update":
-                    logger.info(f"Market data update received: {data}")
+                    #logger.info(f"Market data update received: {data}")
                     self._process_market_data_update(data)
 
         except websockets.exceptions.ConnectionClosed:
@@ -453,6 +453,10 @@ class GameAPI:
                 self.market_events.pop(0)
             if len(self.event_history) > 10000:
                 self.event_history.pop(0)
+
+    def _get_instrument_info(self, instrument_id: InstrumentID_t) -> Optional[InstrumentInfo]:
+        """Get information about an instrument"""
+        return self.current_orderbooks[instrument_id]
 
     # ========== Market Data Methods (using MarketDataCache) ==========
 
