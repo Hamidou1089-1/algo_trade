@@ -12,10 +12,14 @@ class TradingBot():
         self.api = api
         self.instrument_id = None
 
+        self.orderbook = None
+
     def get_random_instrument(self):
         """Select a random instrument from available orderbooks"""
         if self.api.current_orderbooks:
             self.instrument_id = random.choice(list(self.api.current_orderbooks.keys()))
+
+            self.orderbook = self.api.current_orderbooks[self.instrument_id]
             logger.info(f"Selected instrument: {self.instrument_id}")
         else:
             logger.info("No instruments available yet")
@@ -169,7 +173,7 @@ class TradingBot():
         """Main trading loop"""
         logger.info("Starting trading bot...")
 
-        
+
         
         while True:
             try:
@@ -182,6 +186,9 @@ class TradingBot():
                 
                 # Get best bid and ask prices
                 best_bid, best_ask = self.get_best_prices()
+
+                self.fair_price = self.compute_fair_price()
+                logger.info(f"Fair price: {self.fair_price}")
                 
                 if best_bid and best_ask:
                     logger.info(f"Best bid: {best_bid}, Best ask: {best_ask}")
@@ -201,3 +208,15 @@ class TradingBot():
             except Exception as e:
                 logger.info(f"Error in trading loop: {e}")
                 await asyncio.sleep(1)
+
+    def compute_fair_price(self): 
+
+        bids = self.orderbook.bids
+        asks = self.orderbook.asks
+
+        best_bid = max(bids.keys())
+        best_ask = min(asks.keys())
+        best_bid_vol, best_ask_vol = bids[best_bid], asks[best_ask]
+
+        return (best_ask*best_ask_vol + best_bid*best_bid_vol) / (best_bid_vol + best_ask_vol)
+

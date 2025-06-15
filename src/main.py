@@ -1,7 +1,8 @@
 import asyncio
 from api import GameAPI
 import logging
-
+import os 
+from test_bot import TradingBot
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -18,11 +19,20 @@ async def main():
         TEAM_SECRET # Set to True to see all raw updates in logs
     )
     
+
     await cache.connect()
 
+    # testbot = TradingBot(cache)
+
+    # await testbot.run()
+
     while True:
-        await asyncio.sleep(1)
-        logger.info(f"Market data update processed: {cache.current_orderbooks}")
+        await asyncio.sleep(10)
+        for asset in ['$JUMP', '$GARR', '$CARD', '$HEST', '$LOGN', '$SIMP']:
+            os.makedirs("data/"+asset, exist_ok=True)
+        logger.info("Dumping data")
+        cache.csv_dump_dfs("data")
+        logger.info("Data dumped")
 
 
 if __name__ == '__main__':

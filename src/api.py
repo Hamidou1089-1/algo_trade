@@ -155,6 +155,8 @@ class GameAPI:
         self.orderbook_history: Dict[InstrumentID_t, List[tuple]] = defaultdict(list)  # (timestamp, orderbook)
         self.event_history: List[tuple] = []  # (timestamp, event)
 
+        self.underlying_dfs: Dict[str, pd.DataFrame] = {}
+
     async def connect(self):
 
         try : 
@@ -434,12 +436,13 @@ class GameAPI:
         
         #logger.info(f"Market data update processed: {self.current_orderbooks}")
         # Cache candle data
-        #for category in ['tradeable', 'untradeable']:
+        for category in ['tradeable', 'untradeable']:
 
-        category = 'untradeable'
-        category_data = getattr(data.candles, category, {})
-        for instr_id, candles in category_data.items():
-            self.current_candles[instr_id] = candles
+            #category = 'untradeable'
+            category_data = getattr(data.candles, category, {})
+            for instr_id, candles in category_data.items():
+                self.current_candles[instr_id] = candles
+            #self.update_underlying_dfs()
         
         # Cache events
         for event in data.events:
@@ -459,6 +462,20 @@ class GameAPI:
     def _get_instrument_info(self, instrument_id: InstrumentID_t) -> Optional[InstrumentInfo]:
         """Get information about an instrument"""
         return self.current_orderbooks[instrument_id]
+
+    def update_underlying_dfs(self):
+        """Update the underlying DataFrames"""
+        for instr_id, candles in self.current_candles.items() :
+            if instr_id in ['$JUMP', '$GARR', '$CARD', '$HEST', '$LOGN', '$SIMP']:
+
+                logger.info(f"Updating underlying df for instrument {instr_id}")
+                self.underlying_dfs[instr_id] = pd.concat([self.underlying_dfs[instr_id], pd.DataFrame([candles])], ignore_index=True)
+        logger.info(f"Underlying DataFrames updated: {self.underlying_dfs}")
+
+    def csv_dump_dfs(self, dir: str):
+        for underlying, df in self.underlying_dfs.items():
+            df.to_csv(f"{dir}/{underlying}.csv", index=False)
+
 
     # ========== Market Data Methods (using MarketDataCache) ==========
 
