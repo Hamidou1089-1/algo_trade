@@ -22,17 +22,17 @@ async def main():
 
     await cache.connect()
 
-    # testbot = TradingBot(cache)
+    testbot = TradingBot(cache)
 
-    # await testbot.run()
+    await testbot.run()
 
-    while True:
-        await asyncio.sleep(10)
-        for asset in ['$JUMP', '$GARR', '$CARD', '$HEST', '$LOGN', '$SIMP']:
-            os.makedirs("data/"+asset, exist_ok=True)
-        logger.info("Dumping data")
-        cache.csv_dump_dfs("data")
-        logger.info("Data dumped")
+    # while True:
+    #     await asyncio.sleep(10)
+    #     for asset in ['$JUMP', '$GARR', '$CARD', '$HEST', '$LOGN', '$SIMP']:
+    #         os.makedirs("data/"+asset, exist_ok=True)
+    #     logger.info("Dumping data")
+    #     cache.csv_dump_dfs("data")
+    #     logger.info("Data dumped")
 
 
 

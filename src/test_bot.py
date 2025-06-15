@@ -11,7 +11,8 @@ class TradingBot():
     def __init__(self, api: GameAPI):
         self.api = api
         self.instrument_id = None
-
+        self.fair_price = None
+        self.mid_price = None
         self.orderbook = None
 
     def get_random_instrument(self):
@@ -174,7 +175,6 @@ class TradingBot():
         logger.info("Starting trading bot...")
 
 
-        
         while True:
             try:
                 # Get random instrument if not selected
@@ -187,17 +187,19 @@ class TradingBot():
                 # Get best bid and ask prices
                 best_bid, best_ask = self.get_best_prices()
 
-                self.fair_price = self.compute_fair_price()
+                self.compute_fair_mid_price()
                 logger.info(f"Fair price: {self.fair_price}")
                 
                 if best_bid and best_ask:
                     logger.info(f"Best bid: {best_bid}, Best ask: {best_ask}")
                     
-                    # Place buy order at best bid
-                    await self.place_buy_order(best_bid)
-                    
-                    # Place sell order at best ask  
-                    await self.place_sell_order(best_ask)
+                    if self.mid_price < self.fair_price :
+                        # Place buy order at best bid
+                        await self.place_buy_order(best_bid)
+                        
+                    else :
+                        # Place sell order at best ask  
+                        await self.place_sell_order(best_ask)
                     
                 else:
                     logger.info(f"No valid prices for {self.instrument_id}")
@@ -214,9 +216,8 @@ class TradingBot():
         bids = self.orderbook.bids
         asks = self.orderbook.asks
 
-        best_bid = max(bids.keys())
-        best_ask = min(asks.keys())
+        best_bid, best_ask = self.get_best_prices()
         best_bid_vol, best_ask_vol = bids[best_bid], asks[best_ask]
 
-        return (best_ask*best_ask_vol + best_bid*best_bid_vol) / (best_bid_vol + best_ask_vol)
-
+        self.fair_price = (best_ask*best_ask_vol + best_bid*best_bid_vol) / (best_bid_vol + best_ask_vol)
+        self.mid_price = ( best_ask - best_bid ) / 2 
