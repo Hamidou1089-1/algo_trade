@@ -35,6 +35,11 @@ async def main():
         logger.info("Data dumped")
 
 
+
+
+
+
+
 if __name__ == '__main__':
     logger.info("Market Data Cache starting...")
     asyncio.run(main()) 
