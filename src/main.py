@@ -1,5 +1,5 @@
 import asyncio
-from gameapi import GameAPI
+from api import GameAPI
 import logging
 
 logger = logging.getLogger(__name__)
@@ -14,11 +14,12 @@ async def main():
     # Create and connect to market data cache
     cache = GameAPI(
         EXCHANGE_URI,
-        TEAM_SECRET,
-        print_updates=False  # Set to True to see all raw updates in logs
+        TEAM_SECRET # Set to True to see all raw updates in logs
     )
     
     await cache.connect()
+
+    underlying = "CARD"
     
 
 
