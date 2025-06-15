@@ -434,10 +434,12 @@ class GameAPI:
         
         #logger.info(f"Market data update processed: {self.current_orderbooks}")
         # Cache candle data
-        for category in ['tradeable', 'untradeable']:
-            category_data = getattr(data.candles, category, {})
-            for instr_id, candles in category_data.items():
-                self.current_candles[instr_id] = candles
+        #for category in ['tradeable', 'untradeable']:
+
+        category = 'untradeable'
+        category_data = getattr(data.candles, category, {})
+        for instr_id, candles in category_data.items():
+            self.current_candles[instr_id] = candles
         
         # Cache events
         for event in data.events:
