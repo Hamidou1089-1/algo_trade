@@ -19,9 +19,6 @@ async def main():
     
     await cache.connect()
 
-    underlying = "CARD"
-    
-
 
 if __name__ == '__main__':
     logger.info("Market Data Cache starting...")
