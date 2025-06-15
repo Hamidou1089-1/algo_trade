@@ -149,20 +149,25 @@ class GameAPI:
         self.market_events: List[Dict[str, Any]] = []
         self.last_market_time: Optional[Time_t] = None
 
+        self.instruments_discovered = set()
+
         # Historical data
         self.orderbook_history: Dict[InstrumentID_t, List[tuple]] = defaultdict(list)  # (timestamp, orderbook)
         self.event_history: List[tuple] = []  # (timestamp, event)
-        
-        
-        
 
     async def connect(self):
-        """Connect to the AlgoTrade server for trading"""
-        self.ws = await websockets.connect(self.uri)
-        welcome_data = json.loads(await self.ws.recv())
-        welcome_message = WelcomeMessage(**welcome_data)
-        logger.info(f"GameAPI Connected: {welcome_message.message}")
 
+        try : 
+            """Connect to the AlgoTrade server for trading"""
+            logger.info(f"Connecting to {self.uri}")
+            self.ws = await websockets.connect(self.uri)
+            welcome_data = json.loads(await self.ws.recv())
+            welcome_message = WelcomeMessage(**welcome_data)
+            logger.info(f"GameAPI Connected: {welcome_message.message}")
+
+        except Exception as e:
+            logger.error(f"Failed to connect to market: {e}")
+            raise
         # Start receiving messages (only for trading responses)
         asyncio.create_task(self._receive_loop())
         return welcome_message
@@ -190,6 +195,7 @@ class GameAPI:
                 # We don't process market data here - that's handled by MarketDataCache
                 msg_type = data.get("type")
                 if msg_type == "market_data_update":
+                    logger.info(f"Market data update received: {data}")
                     self._process_market_data_update(data)
 
         except websockets.exceptions.ConnectionClosed:
@@ -405,8 +411,8 @@ class GameAPI:
                 logger.info(f"New instrument discovered: {instr_id}")
                 
                 # Only log basic info for first few instruments
-                if len(self.instruments_discovered) <= 3:
-                    logger.debug(f"Sample orderbook structure for {instr_id}: bids={len(orderbook.bids)}, asks={len(orderbook.asks)}")
+                # if len(self.instruments_discovered) <= 3:
+                #     logger.debug(f"Sample orderbook structure for {instr_id}: bids={len(orderbook.bids)}, asks={len(orderbook.asks)}")
             
             # Update best prices and volumes
             instrument = self.instrument_info[instr_id]
@@ -426,6 +432,7 @@ class GameAPI:
                 instrument.best_ask = best_ask_price
                 instrument.ask_volume = sum(int(qty) if isinstance(qty, str) else qty for qty in orderbook.asks.values())
         
+        #logger.info(f"Market data update processed: {self.current_orderbooks}")
         # Cache candle data
         for category in ['tradeable', 'untradeable']:
             category_data = getattr(data.candles, category, {})

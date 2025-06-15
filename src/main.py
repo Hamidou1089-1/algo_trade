@@ -2,6 +2,7 @@ import asyncio
 from api import GameAPI
 import logging
 
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 async def main():
@@ -18,6 +19,10 @@ async def main():
     )
     
     await cache.connect()
+
+    while True:
+        await asyncio.sleep(1)
+        logger.info(f"Market data update processed: {cache.current_orderbooks}")
 
 
 if __name__ == '__main__':
