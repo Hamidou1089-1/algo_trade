@@ -22,9 +22,14 @@ async def main():
 
     await cache.connect()
 
-    testbot = TradingBot(cache)
+    testbots = []
+    for i in range(10):
+        testbots.append(TradingBot(cache))
 
-    await testbot.run()
+        
+    for bot in testbots:
+        await bot.run()
+
 
     # while True:
     #     await asyncio.sleep(10)

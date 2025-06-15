@@ -203,6 +203,7 @@ class TradingBot():
                     
                 else:
                     logger.info(f"No valid prices for {self.instrument_id}")
+                    
                 
                 # Wait before next iteration
                 await asyncio.sleep(2)
@@ -211,13 +212,41 @@ class TradingBot():
                 logger.info(f"Error in trading loop: {e}")
                 await asyncio.sleep(1)
 
-    def compute_fair_price(self): 
+    def compute_fair_mid_price(self): 
+        logger.info(f"Computing fair and mid price for {self.instrument_id}")
 
+        logger.info(f"Orderbook: {self.orderbook}")
+
+        if not self.orderbook.bids or not self.orderbook.asks:
+
+            logger.info("No orderbook found, getting random instrument")
+            self.get_random_instrument()
+
+            return
+        
         bids = self.orderbook.bids
         asks = self.orderbook.asks
 
-        best_bid, best_ask = self.get_best_prices()
-        best_bid_vol, best_ask_vol = bids[best_bid], asks[best_ask]
+        best_bid = None
+        if self.orderbook.bids:
+            bid_prices = [int(price) for price in self.orderbook.bids.keys()]
+            best_bid = max(bid_prices)
+        
+        # Get best ask (lowest ask price)
+        best_ask = None
+        if self.orderbook.asks:
+            ask_prices = [int(price) for price in self.orderbook.asks.keys()]
+            best_ask = min(ask_prices)
+        
+        best_bid_vol, best_ask_vol = bids[str(best_bid)], asks[str(best_ask)]
+        logger.info("arriving here")
+
+        best_bid = int(best_bid)
+        best_ask = int(best_ask)
+        best_bid_vol = int(best_bid_vol)
+        best_ask_vol = int(best_ask_vol)
 
         self.fair_price = (best_ask*best_ask_vol + best_bid*best_bid_vol) / (best_bid_vol + best_ask_vol)
-        self.mid_price = ( best_ask - best_bid ) / 2 
+        self.mid_price = best_bid + ( best_ask - best_bid ) / 2 
+
+        logger.info(f"Fair price: {self.fair_price}, Mid price: {self.mid_price}")
